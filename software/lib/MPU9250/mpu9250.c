@@ -45,6 +45,40 @@ void gyro_cal(mpu9250 *imu, int buffer_size){
 
 }
 
+void acc_cal(mpu9250 *imu, int buffer_size)
+{
+  // Buffer
+  double acc_buffer[buffer_size][3];
+
+  int buffer_i = 0;
+  while (buffer_i < buffer_size)
+  {
+    mpu9250_update(imu);
+    acc_buffer[buffer_i][0] = imu->a[0];
+    acc_buffer[buffer_i][1] = imu->a[1];
+    acc_buffer[buffer_i][2] = imu->a[2];
+    buffer_i++;
+  }
+
+  // Calculate gyro offsets
+  for (int i = 0; i < 3; i++)
+  {
+    double acc_sum = 0.0;
+
+    for (int j = 0; j < buffer_size; j++)
+    {
+        acc_sum += acc_buffer[j][i];
+    }
+    if(i==2){
+      imu->a_offsets[i] = acc_sum / buffer_size - 1.0;
+    }else{
+      imu->a_offsets[i] = acc_sum / buffer_size;
+    }
+
+  }
+
+}
+
 void mpu9250_setup(mpu9250 *imu, uint32_t PIN_CS, uint32_t PIN_MISO, uint32_t PIN_SCK, uint32_t PIN_MOSI)
 {
   // SPI STUFF
@@ -107,6 +141,7 @@ void apply_offset(mpu9250 *imu)
   for (int i = 0; i < 3; i++)
   {
     imu->w[i] -=imu->w_offsets[i];
+    imu->a[i] -= imu->a_offsets[i];
   }
 }
 

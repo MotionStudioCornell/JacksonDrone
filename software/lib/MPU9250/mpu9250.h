@@ -27,4 +27,5 @@ typedef struct mpu9250
 void mpu9250_setup(mpu9250 *imu, uint32_t PIN_CS, uint32_t PIN_MISO, uint32_t PIN_SCK, uint32_t PIN_MOSI);
 // buffer_size: size of the data buffer for data collection during cal
 void gyro_cal(mpu9250 *imu, int buffer_size);
+void acc_cal(mpu9250 *imu, int buffer_size);
 void mpu9250_update(mpu9250 *imu);

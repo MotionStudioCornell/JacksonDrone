@@ -19,7 +19,7 @@ events:
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
       Compiler: /opt/homebrew/bin/arm-none-eabi-gcc 
-      Build flags: ;-mcpu=cortex-m0plus;-mthumb
+      Build flags: -mcpu=cortex-m0plus;-mthumb
       Id flags:  
       
       The output was:
@@ -39,7 +39,7 @@ events:
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler: /opt/homebrew/bin/arm-none-eabi-gcc 
-      Build flags: ;-mcpu=cortex-m0plus;-mthumb
+      Build flags: -mcpu=cortex-m0plus;-mthumb
       Id flags: -c 
       
       The output was:
@@ -61,7 +61,7 @@ events:
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
       Compiler: /opt/homebrew/bin/arm-none-eabi-g++ 
-      Build flags: ;-mcpu=cortex-m0plus;-mthumb
+      Build flags: -mcpu=cortex-m0plus;-mthumb
       Id flags:  
       
       The output was:
@@ -81,7 +81,7 @@ events:
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler: /opt/homebrew/bin/arm-none-eabi-g++ 
-      Build flags: ;-mcpu=cortex-m0plus;-mthumb
+      Build flags: -mcpu=cortex-m0plus;-mthumb
       Id flags: -c 
       
       The output was:
