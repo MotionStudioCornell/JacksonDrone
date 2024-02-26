@@ -5,4 +5,4 @@ KiCad Schematics for P2
 
 The controller software can be found here: https://github.com/MotionStudioCornell/P2
 
-![P2-Schematics](https://github.com/MotionStudioCornell/P2-Schematics/blob/main/P2.svg?raw=true)
+![P2-Schematics](https://github.com/MotionStudioCornell/BritneyDrone/blob/master/hardware/P2.svg?raw=true)
