@@ -1,4 +1,4 @@
-// Padded and checksummed version of: /Users/deemo/Desktop/workspace/Drone/controller/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: /Users/deemo/Desktop/workspace/Drone/BD/software/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb

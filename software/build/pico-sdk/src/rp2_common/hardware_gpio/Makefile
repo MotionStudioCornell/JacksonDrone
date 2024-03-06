@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/deemo/Desktop/workspace/Drone/controller/src
+CMAKE_SOURCE_DIR = /Users/deemo/Desktop/workspace/Drone/BD/software/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/deemo/Desktop/workspace/Drone/controller/build
+CMAKE_BINARY_DIR = /Users/deemo/Desktop/workspace/Drone/BD/software/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/deemo/Desktop/workspace/Drone/controller/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/deemo/Desktop/workspace/Drone/controller/build/CMakeFiles /Users/deemo/Desktop/workspace/Drone/controller/build/pico-sdk/src/rp2_common/hardware_gpio//CMakeFiles/progress.marks
-	cd /Users/deemo/Desktop/workspace/Drone/controller/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/hardware_gpio/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deemo/Desktop/workspace/Drone/controller/build/CMakeFiles 0
+	cd /Users/deemo/Desktop/workspace/Drone/BD/software/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles /Users/deemo/Desktop/workspace/Drone/BD/software/build/pico-sdk/src/rp2_common/hardware_gpio//CMakeFiles/progress.marks
+	cd /Users/deemo/Desktop/workspace/Drone/BD/software/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/hardware_gpio/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/deemo/Desktop/workspace/Drone/controller/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/hardware_gpio/clean
+	cd /Users/deemo/Desktop/workspace/Drone/BD/software/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/hardware_gpio/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,17 +103,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/deemo/Desktop/workspace/Drone/controller/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/hardware_gpio/preinstall
+	cd /Users/deemo/Desktop/workspace/Drone/BD/software/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/hardware_gpio/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/deemo/Desktop/workspace/Drone/controller/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/hardware_gpio/preinstall
+	cd /Users/deemo/Desktop/workspace/Drone/BD/software/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/hardware_gpio/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/deemo/Desktop/workspace/Drone/controller/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/deemo/Desktop/workspace/Drone/BD/software/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -135,6 +135,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/deemo/Desktop/workspace/Drone/controller/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/deemo/Desktop/workspace/Drone/BD/software/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

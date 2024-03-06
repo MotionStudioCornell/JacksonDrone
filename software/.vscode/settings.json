@@ -18,12 +18,9 @@
   },
   "cmake.buildBeforeRun": true,
   "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
-  "cmake.sourceDirectory": "/Users/deemo/Desktop/workspace/Drone/controller/src",
   "files.associations": {
-    "irq.h": "c"
+    "irq.h": "c",
+    "mpu9250.h": "c"
   },
-  // "cmake.sourceDirectory": "/Users/deemo/Desktop/workspace/Drone/controller/src",
-  // "files.associations": {
-  //   "stdio.h": "c"
-  // }
+  "cmake.sourceDirectory": "/Users/deemo/Desktop/workspace/Drone/BD/software/src"
 }

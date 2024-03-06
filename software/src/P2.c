@@ -236,21 +236,20 @@ int main()
     mpu9250_update(&imu);
 
     printf("Gyro: X = %10.5f, Y = %10.5f, Z = %10.5f (dps) | Acc: X = %7.5f, Y = %7.5f, Z = %7.5f (g) | Temp = %4.2f degC \n", imu.w[0], imu.w[1], imu.w[2], imu.a[0], imu.a[1], imu.a[2], imu.temperature);
-    double throttle_scale = 1.0;
-    if(controller_armed){
-      // printf("Controller ARMED! \n");
-      // printf("Throttle: %f \n", throttle);
-      motor_control(&esc, throttle / throttle_scale+0.1, 0);
-      motor_control(&esc, throttle / throttle_scale+0.1, 1);
-      motor_control(&esc, throttle / throttle_scale+0.1, 2);
-      motor_control(&esc, throttle / throttle_scale+0.1, 3);
-    }else{
-      // printf("Controller DISARMED! \n");
-      motor_control(&esc, 0.0, 0);
-      motor_control(&esc, 0.0, 1);
-      motor_control(&esc, 0.0, 2);
-      motor_control(&esc, 0.0, 3);
-    }
-
-  }
+  //   double throttle_scale = 1.0;
+  //   if(controller_armed){
+  //     // printf("Controller ARMED! \n");
+  //     // printf("Throttle: %f \n", throttle);
+  //     motor_control(&esc, throttle / throttle_scale+0.1, 0);
+  //     motor_control(&esc, throttle / throttle_scale+0.1, 1);
+  //     motor_control(&esc, throttle / throttle_scale+0.1, 2);
+  //     motor_control(&esc, throttle / throttle_scale+0.1, 3);
+  //   }else{
+  //     // printf("Controller DISARMED! \n");
+  //     motor_control(&esc, 0.0, 0);
+  //     motor_control(&esc, 0.0, 1);
+  //     motor_control(&esc, 0.0, 2);
+  //     motor_control(&esc, 0.0, 3);
+  //   }
+}
 }

@@ -1,0 +1,16 @@
+#!/bin/zsh
+
+# Set the build directory path
+build_dir="/Users/deemo/Desktop/workspace/Drone/BD/software/build"
+
+# Remove all files in the build directory
+rm -rf "$build_dir"/*
+
+# Change to the build directory
+cd "$build_dir"
+
+# Run CMake
+cmake ../src -DPICO_BOARD=pico_w  
+
+# compile
+make -j4
