@@ -1,6 +1,7 @@
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
+CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: \
+ /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c \
+ /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio/driver.h \
+ /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_base/include/pico.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
@@ -30,12 +31,16 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pic
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/sys/cdefs.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+ /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
+ /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
+ /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+ /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
+ /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+ /Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h \
+ /Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
+ /Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
+ /Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
@@ -45,15 +50,4 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pic
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_pll/include/hardware/pll.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pll.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pll.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h
+ /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h

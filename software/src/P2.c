@@ -9,6 +9,7 @@
 #include "../lib/MPU9250/mpu9250.h"
 #include "../lib/ESC/esc.h"
 #include "../lib/Filter/leaky_LP.h"
+// #include "../lib/Radio/radio.h"
 #include "pico/cyw43_arch.h"
 
 // Connection
@@ -33,38 +34,35 @@
 #define PIN_PWM2 20
 #define PIN_PWM3 21
 
-// radio
-#define RADIO_UART_ID uart1
-#define BAUD_RATE 420000
+// uart0
+
+#define UART_ID uart0
 #define DATA_BITS 8
 #define STOP_BITS 1
 #define PARITY UART_PARITY_NONE
-
-#define CRSF_ADDRESS_CRSF_TRANSMITTER 0xEE
-#define CRSF_ADDRESS_RADIO_TRANSMITTER 0xEA
-#define CRSF_ADDRESS_FLIGHT_CONTROLLER 0xC8
-#define CRSF_ADDRESS_CRSF_RECEIVER 0xEC
 
 static mpu9250 imu;
 static ESC esc;
 
 void uart0_setup()
 {
-  // Set up our UART with the required speed.
-  uart_init(uart0, 115200);
+  // Set up our UART with a basic baud rate.
+  uart_init(UART_ID, 115200);
 
-  // Set the TX and RX pins by using the function select on the GPIO
-  // Set datasheet for more information on function select
-  gpio_set_function(0, GPIO_FUNC_UART);
-  gpio_set_function(1, GPIO_FUNC_UART);
+  gpio_set_function(12, GPIO_FUNC_UART);
+  gpio_set_function(13, GPIO_FUNC_UART);
 
-  // Enable UART interrupt when RX data is available
-  uart_set_irq_enables(uart0, true, false);
+  uart_set_baudrate(UART_ID, 115200);
+  // Set UART flow control CTS/RTS, we don't want these, so turn them off
+  uart_set_hw_flow(UART_ID, false, false);
+  // Set our data format
+  uart_set_format(UART_ID, DATA_BITS, STOP_BITS, PARITY);
+  // Turn off FIFO's - we want to do this character by character
+  uart_set_fifo_enabled(UART_ID, false);
 }
 
-int buffer_index = 0;
-double throttle = 0;
-bool controller_armed = false;
+volatile int buffer_index = 0;
+volatile float throttle = 0.0;
 
 void uart0_irq_handler()
 {
@@ -90,110 +88,58 @@ void uart0_irq_handler()
   }
 }
 
-void radio_setup()
+void uart1_setup()
 {
-  // Set up UART
-  uart_init(RADIO_UART_ID, BAUD_RATE);
-  // Set the TX and RX pins by using the function select on the GPIO
-  // Set datasheet for more information on function select
-  gpio_set_function(8, GPIO_FUNC_UART);
-  gpio_set_function(9, GPIO_FUNC_UART);
+  // Set up our UART with a basic baud rate.
+  uart_init(uart1, 9600);
 
-  uart_set_irq_enables(RADIO_UART_ID, true, false);
+  gpio_set_function(4, GPIO_FUNC_UART);
+  gpio_set_function(5, GPIO_FUNC_UART);
 
-  uart_set_hw_flow(RADIO_UART_ID, false, false);
-  uart_set_format(RADIO_UART_ID, DATA_BITS, STOP_BITS, PARITY);
-  uart_set_fifo_enabled(RADIO_UART_ID, false);
+  uart_set_baudrate(uart1, 9600);
+  // Set UART flow control CTS/RTS, we don't want these, so turn them off
+  uart_set_hw_flow(uart1, false, false);
+  // Set our data format
+  uart_set_format(uart1, DATA_BITS, STOP_BITS, PARITY);
+  // Turn off FIFO's - we want to do this character by character
+  uart_set_fifo_enabled(uart1, false);
 }
 
-// void decode_crsf(uint8_t *data, uint length)
-// {
-//   // CRSF frame has a minimum length of 4 bytes (Address, Length, Type, CRC)
-//   if (length < 4)
-//   {
-//     printf("Frame too short\n");
-//     return;
-//   }
-
-// }
-bool valid_type = false;
-uint8_t radio_buffer[32];
-uint radio_buffer_index = 0;
-
-void radio_irq_handler()
+void on_uart1_rx()
 {
-
-  while (uart_is_readable(RADIO_UART_ID))
+  // Continue to read while there is data available on UART1
+  while (uart_is_readable(uart1))
   {
-    int character = uart_getc(RADIO_UART_ID);
+    // Read one byte from UART1
+    uint8_t ch = uart_getc(uart1);
 
-    if (character == CRSF_ADDRESS_FLIGHT_CONTROLLER)
+    // Check if UART0 is ready to transmit data
+    if (uart_is_writable(uart0))
     {
-      valid_type = true;
-    }
-
-    if (valid_type)
-    {
-      if (radio_buffer_index < sizeof(radio_buffer))
-      {
-        radio_buffer[radio_buffer_index] = character;
-        radio_buffer_index++;
-      }
-      else
-      {
-        // for (int i = 0; i < 16; i++)
-        // {
-        //   printf("[%02X, %d], ", radio_buffer[i], radio_buffer[i]); // Print each byte as a 2-digit hexadecimal number
-        // }
-        // printf("\n"); // Print a newline at the end
-        // 45-255 C0, 0-196 C1 14_arm
-
-        // lower half of the left joystick
-        if (radio_buffer[7] == 0xC0)
-        {
-          throttle = (radio_buffer[6] - 45.0) / (255.0 - 45.0) * 0.5;
-        }
-        // higher half of the left joystick
-        if (radio_buffer[7] == 0xC1)
-        {
-          throttle = radio_buffer[6] / 196.0 * 0.5 + 0.5;
-        }
-        // if already armed
-        // the SE button 0x00 if pressed
-
-        if (radio_buffer[14] == 0xBF)
-        {
-          controller_armed = false;
-        }
-        else if (throttle == 0.0 && radio_buffer[14] == 0x00)
-        {
-          controller_armed = true;
-        }
-
-        valid_type = false;
-        radio_buffer_index = 0;
-      }
+      // Send the received byte on UART0
+      uart_putc(uart0, ch);
     }
   }
 }
 
 int main()
-
 {
   // Serial
   stdio_init_all();
 
   // UART
   uart0_setup();
-  // Set the IRQ handler
+  // And set up and enable the interrupt handlers
   irq_set_exclusive_handler(UART0_IRQ, uart0_irq_handler);
   irq_set_enabled(UART0_IRQ, true);
+  // Now enable the UART to send interrupts - RX only
+  uart_set_irq_enables(UART_ID, true, false);
 
-  // RADIO
-  radio_setup();
+  uart1_setup();
   // Set the IRQ handler
-  irq_set_exclusive_handler(UART1_IRQ, radio_irq_handler);
+  irq_set_exclusive_handler(UART1_IRQ, on_uart1_rx);
   irq_set_enabled(UART1_IRQ, true);
+  uart_set_irq_enables(uart1, true, false);
 
   // Need Wifi For the LED GPIO
   if (cyw43_arch_init())
@@ -223,61 +169,53 @@ int main()
   arm_motor(&esc);
   printf("Done.");
 
-  // blink to show we are ready
-  cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
-  sleep_ms(100);
-  cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 0);
-  sleep_ms(100);
-  cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
-  sleep_ms(100);
-  cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 0);
-  sleep_ms(100);
-  cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
   // Low pass
   leaky_lp w_filter;
   leaky_lp a_filter;
 
-  // 0-1
-  float alpha = 0.1f;
+  leaky_init(&w_filter, 0.2f);
+  leaky_init(&a_filter, 0.2f);
 
-  leaky_init(&w_filter, alpha);
-  leaky_init(&a_filter, alpha);
+  // blink to show we are ready
+  cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
+  sleep_ms(50);
+  cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 0);
+  sleep_ms(50);
+  cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
 
   while (1)
   {
+    // fetch new imu data
     mpu9250_update(&imu);
-
     float wf[3];
     float af[3];
-
+    // low pass
     leaky_update(&w_filter, imu.w, wf);
     leaky_update(&a_filter, imu.a, af);
 
-    // printf("Gyro: X = %10.5f, Y = %10.5f, Z = %10.5f (dps) | Acc: X = %7.5f, Y = %7.5f, Z = %7.5f (g) | Temp = %4.2f degC \n", imu.w[0], imu.w[1], imu.w[2], imu.a[0], imu.a[1], imu.a[2], imu.temperature);
-
     // good for arduino serial plotter:
-    printf("wx:%f, wy:%f, wz:%f, wxf:%f, wyf:%f, wzf:%f, ax:%f, ay:%f, az:%f, axf:%f, ayf:%f, azf:%f\n",
-           imu.w[0], imu.w[1], imu.w[2],
-           wf[0], wf[1], wf[2],
-           imu.a[0], imu.a[1], imu.a[2],
-           af[0], af[1], af[2]);
+    // printf("wx:%f, wy:%f, wz:%f, wxf:%f, wyf:%f, wzf:%f, ax:%f, ay:%f, az:%f, axf:%f, ayf:%f, azf:%f\n",
+    //        imu.w[0], imu.w[1], imu.w[2],
+    //        wf[0], wf[1], wf[2],
+    //        imu.a[0], imu.a[1], imu.a[2],
+    //        af[0], af[1], af[2]);
+
+    // if armed
+    if (true)
+    {
+      motor_control(&esc, throttle + 0.1, 0);
+      motor_control(&esc, throttle + 0.1, 1);
+      motor_control(&esc, throttle + 0.1, 2);
+      motor_control(&esc, throttle + 0.1, 3);
+    }
+    else
+    {
+      motor_control(&esc, 0.0, 0);
+      motor_control(&esc, 0.0, 1);
+      motor_control(&esc, 0.0, 2);
+      motor_control(&esc, 0.0, 3);
+    }
 
     sleep_ms(10);
-
-    //   double throttle_scale = 1.0;
-    //   if(controller_armed){
-    //     // printf("Controller ARMED! \n");
-    //     // printf("Throttle: %f \n", throttle);
-    //     motor_control(&esc, throttle / throttle_scale+0.1, 0);
-    //     motor_control(&esc, throttle / throttle_scale+0.1, 1);
-    //     motor_control(&esc, throttle / throttle_scale+0.1, 2);
-    //     motor_control(&esc, throttle / throttle_scale+0.1, 3);
-    //   }else{
-    //     // printf("Controller DISARMED! \n");
-    //     motor_control(&esc, 0.0, 0);
-    //     motor_control(&esc, 0.0, 1);
-    //     motor_control(&esc, 0.0, 2);
-    //     motor_control(&esc, 0.0, 3);
-    //   }
   }
 }

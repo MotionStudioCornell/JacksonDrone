@@ -1,6 +1,6 @@
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/Drone/BD/software/lib/ESC/esc.c.obj: \
- /Users/deemo/Desktop/workspace/Drone/BD/software/lib/ESC/esc.c \
- /Users/deemo/Desktop/workspace/Drone/BD/software/lib/ESC/esc.h \
+CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/Drone/BD/software/lib/Radio/radio.c.obj: \
+ /Users/deemo/Desktop/workspace/Drone/BD/software/lib/Radio/radio.c \
+ /Users/deemo/Desktop/workspace/Drone/BD/software/lib/Radio/radio.h \
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/stdio.h \
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/_ansi.h \
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/newlib.h \
@@ -73,10 +73,4 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/Drone/BD/software/lib/ESC/esc.c.
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_pwm/include/hardware/pwm.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pwm.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pwm.h
+ /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h

@@ -13,6 +13,7 @@ typedef struct
   float prev[VECTOR_SIZE]
 } leaky_lp;
 
+
 void leaky_init(leaky_lp *filter, float alpha);
 void leaky_update(leaky_lp *filter, float input[VECTOR_SIZE], float output[VECTOR_SIZE]);
 
