@@ -19,7 +19,7 @@ static inline void cs_deselect(mpu9250 *imu)
 void gyro_cal(mpu9250 *imu, int buffer_size){
 
   // Buffer
-  double gyro_buffer[buffer_size][3];
+  float gyro_buffer[buffer_size][3];
 
   int buffer_i = 0;
   while (buffer_i < buffer_size)
@@ -34,7 +34,7 @@ void gyro_cal(mpu9250 *imu, int buffer_size){
   // Calculate gyro offsets
   for (int i = 0; i < 3; i++)
   {
-    double gyro_sum = 0.0;
+    float gyro_sum = 0.0;
 
     for (int j = 0; j < buffer_size; j++)
     {
@@ -48,7 +48,7 @@ void gyro_cal(mpu9250 *imu, int buffer_size){
 void acc_cal(mpu9250 *imu, int buffer_size)
 {
   // Buffer
-  double acc_buffer[buffer_size][3];
+  float acc_buffer[buffer_size][3];
 
   int buffer_i = 0;
   while (buffer_i < buffer_size)
@@ -63,7 +63,7 @@ void acc_cal(mpu9250 *imu, int buffer_size)
   // Calculate gyro offsets
   for (int i = 0; i < 3; i++)
   {
-    double acc_sum = 0.0;
+    float acc_sum = 0.0;
 
     for (int j = 0; j < buffer_size; j++)
     {
@@ -123,8 +123,8 @@ void convert(mpu9250 *imu){
   // gyro 65.5, 32.8, 16.4 for +-500,1000,2000 dps
   // acc 8,192, 4,096, 2,048 for +-4,8,16 g
   // assume gyro +-250dps, acc+-2g
-  double gyro_sen = 131;
-  double acc_sen = 16384;
+  float gyro_sen = 131;
+  float acc_sen = 16384;
 
   for (int i = 0; i < 3; i++)
   {
@@ -169,4 +169,5 @@ void mpu9250_update(mpu9250 *imu)
   //convert from raw
   convert(imu);
   apply_offset(imu);
+
 }

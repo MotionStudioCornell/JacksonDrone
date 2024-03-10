@@ -13,12 +13,12 @@ typedef struct mpu9250
   int16_t a_raw[3];
   int16_t temperature_raw;
 
-  double w_offsets[3];
-  double a_offsets[3];
+  float w_offsets[3];
+  float a_offsets[3];
 
-  double w[3];
-  double a[3];
-  double temperature;
+  float w[3];
+  float a[3];
+  float temperature;
 
   int PIN_CS;
 

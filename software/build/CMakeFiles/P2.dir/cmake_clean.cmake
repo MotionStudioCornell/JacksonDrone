@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/P2.dir/P2.c.obj.d"
   "CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/Drone/BD/software/lib/ESC/esc.c.obj"
   "CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/Drone/BD/software/lib/ESC/esc.c.obj.d"
+  "CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/Drone/BD/software/lib/Filter/leaky_LP.c.obj"
+  "CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/Drone/BD/software/lib/Filter/leaky_LP.c.obj.d"
   "CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/Drone/BD/software/lib/MPU9250/mpu9250.c.obj"
   "CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/Drone/BD/software/lib/MPU9250/mpu9250.c.obj.d"
   "CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj"

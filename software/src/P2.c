@@ -8,6 +8,7 @@
 #include "pico/binary_info.h"
 #include "../lib/MPU9250/mpu9250.h"
 #include "../lib/ESC/esc.h"
+#include "../lib/Filter/leaky_LP.h"
 #include "pico/cyw43_arch.h"
 
 // Connection
@@ -145,26 +146,28 @@ void radio_irq_handler()
         //   printf("[%02X, %d], ", radio_buffer[i], radio_buffer[i]); // Print each byte as a 2-digit hexadecimal number
         // }
         // printf("\n"); // Print a newline at the end
-        //45-255 C0, 0-196 C1 14_arm
+        // 45-255 C0, 0-196 C1 14_arm
 
-        //lower half of the left joystick
+        // lower half of the left joystick
         if (radio_buffer[7] == 0xC0)
         {
-          throttle = (radio_buffer[6]-45.0)/(255.0-45.0) *  0.5;
+          throttle = (radio_buffer[6] - 45.0) / (255.0 - 45.0) * 0.5;
         }
-        //higher half of the left joystick
+        // higher half of the left joystick
         if (radio_buffer[7] == 0xC1)
         {
           throttle = radio_buffer[6] / 196.0 * 0.5 + 0.5;
         }
-        //if already armed
-        //the SE button 0x00 if pressed
+        // if already armed
+        // the SE button 0x00 if pressed
 
-
-        if (radio_buffer[14] == 0xBF){
-          controller_armed=false;
-        }else if (throttle == 0.0 && radio_buffer[14] == 0x00){
-          controller_armed=true;
+        if (radio_buffer[14] == 0xBF)
+        {
+          controller_armed = false;
+        }
+        else if (throttle == 0.0 && radio_buffer[14] == 0x00)
+        {
+          controller_armed = true;
         }
 
         valid_type = false;
@@ -205,7 +208,7 @@ int main()
   mpu9250_setup(&imu, PIN_CS, PIN_MISO, PIN_SCK, PIN_MOSI);
   printf("Calibrating Gyro....Keep it Still...\n");
   gyro_cal(&imu, 50);
-  acc_cal(&imu,50);
+  acc_cal(&imu, 50);
   printf("Done. Offsets: w_x: %.5f, w_y:%.5f, w_z:%.5f \n", imu.w_offsets[0], imu.w_offsets[1], imu.w_offsets[2]);
 
   // ESC stuff
@@ -230,26 +233,51 @@ int main()
   cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 0);
   sleep_ms(100);
   cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
+  // Low pass
+  leaky_lp w_filter;
+  leaky_lp a_filter;
+
+  // 0-1
+  float alpha = 0.1f;
+
+  leaky_init(&w_filter, alpha);
+  leaky_init(&a_filter, alpha);
 
   while (1)
   {
     mpu9250_update(&imu);
 
-    printf("Gyro: X = %10.5f, Y = %10.5f, Z = %10.5f (dps) | Acc: X = %7.5f, Y = %7.5f, Z = %7.5f (g) | Temp = %4.2f degC \n", imu.w[0], imu.w[1], imu.w[2], imu.a[0], imu.a[1], imu.a[2], imu.temperature);
-  //   double throttle_scale = 1.0;
-  //   if(controller_armed){
-  //     // printf("Controller ARMED! \n");
-  //     // printf("Throttle: %f \n", throttle);
-  //     motor_control(&esc, throttle / throttle_scale+0.1, 0);
-  //     motor_control(&esc, throttle / throttle_scale+0.1, 1);
-  //     motor_control(&esc, throttle / throttle_scale+0.1, 2);
-  //     motor_control(&esc, throttle / throttle_scale+0.1, 3);
-  //   }else{
-  //     // printf("Controller DISARMED! \n");
-  //     motor_control(&esc, 0.0, 0);
-  //     motor_control(&esc, 0.0, 1);
-  //     motor_control(&esc, 0.0, 2);
-  //     motor_control(&esc, 0.0, 3);
-  //   }
-}
+    float wf[3];
+    float af[3];
+
+    leaky_update(&w_filter, imu.w, wf);
+    leaky_update(&a_filter, imu.a, af);
+
+    // printf("Gyro: X = %10.5f, Y = %10.5f, Z = %10.5f (dps) | Acc: X = %7.5f, Y = %7.5f, Z = %7.5f (g) | Temp = %4.2f degC \n", imu.w[0], imu.w[1], imu.w[2], imu.a[0], imu.a[1], imu.a[2], imu.temperature);
+
+    // good for arduino serial plotter:
+    printf("wx:%f, wy:%f, wz:%f, wxf:%f, wyf:%f, wzf:%f, ax:%f, ay:%f, az:%f, axf:%f, ayf:%f, azf:%f\n",
+           imu.w[0], imu.w[1], imu.w[2],
+           wf[0], wf[1], wf[2],
+           imu.a[0], imu.a[1], imu.a[2],
+           af[0], af[1], af[2]);
+
+    sleep_ms(10);
+
+    //   double throttle_scale = 1.0;
+    //   if(controller_armed){
+    //     // printf("Controller ARMED! \n");
+    //     // printf("Throttle: %f \n", throttle);
+    //     motor_control(&esc, throttle / throttle_scale+0.1, 0);
+    //     motor_control(&esc, throttle / throttle_scale+0.1, 1);
+    //     motor_control(&esc, throttle / throttle_scale+0.1, 2);
+    //     motor_control(&esc, throttle / throttle_scale+0.1, 3);
+    //   }else{
+    //     // printf("Controller DISARMED! \n");
+    //     motor_control(&esc, 0.0, 0);
+    //     motor_control(&esc, 0.0, 1);
+    //     motor_control(&esc, 0.0, 2);
+    //     motor_control(&esc, 0.0, 3);
+    //   }
+  }
 }
