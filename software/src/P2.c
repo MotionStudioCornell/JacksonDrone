@@ -63,10 +63,11 @@ void uart0_setup()
 
 volatile int buffer_index = 0;
 volatile float throttle = 0.0;
-
+volatile bool new_input = true;
 void uart0_irq_handler()
 {
   char buffer[10];
+  new_input = true;
 
   while (uart_is_readable(uart0))
   {
@@ -163,11 +164,11 @@ int main()
 
   printf("Calibrating ESC...\n");
   cali_motor(&esc);
-  printf("Done.");
+  printf("Done.\n");
 
   printf("Arming ESC...\n");
   arm_motor(&esc);
-  printf("Done.");
+  printf("Done.\n");
 
   // Low pass
   leaky_lp w_filter;
@@ -200,13 +201,20 @@ int main()
     //        imu.a[0], imu.a[1], imu.a[2],
     //        af[0], af[1], af[2]);
 
+    // displays the current throttle
+    if (new_input)
+    {
+      new_input = false;
+      printf("Setting control for all motors as: %.1f \% \n", throttle * 100.0);
+    }
+
     // if armed
     if (true)
     {
-      motor_control(&esc, throttle + 0.1, 0);
-      motor_control(&esc, throttle + 0.1, 1);
-      motor_control(&esc, throttle + 0.1, 2);
-      motor_control(&esc, throttle + 0.1, 3);
+      motor_control(&esc, throttle, 0);
+      motor_control(&esc, throttle, 1);
+      motor_control(&esc, throttle, 2);
+      motor_control(&esc, throttle, 3);
     }
     else
     {
