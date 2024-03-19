@@ -102,4 +102,6 @@ CMakeFiles/P2.dir/P2.c.obj: \
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/sys/string.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_country.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/include/pico/async_context.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/include/pico/cyw43_arch/arch_threadsafe_background.h
+ /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/include/pico/cyw43_arch/arch_threadsafe_background.h \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/time.h \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/machine/time.h

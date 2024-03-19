@@ -13,6 +13,7 @@
 // #include "../lib/Radio/radio.h"
 #include "pico/cyw43_arch.h"
 #include <math.h>
+#include <time.h>
 
 // Connection
 // GPIO 4(pin 6)MISO / spi0_rx→ ADO on MPU9250 board
@@ -51,8 +52,7 @@ static leaky_lp a_filter;
 
 static controller fc;
 
-
-#define delta_T_ms 10
+#define delta_T_ms 20
 #define delta_T_s delta_T_ms / 1000.0
 
 
@@ -119,29 +119,14 @@ void uart1_setup()
   uart_set_fifo_enabled(uart1, false);
 }
 
-void on_uart1_rx()
-{
-  // Continue to read while there is data available on UART1
-  while (uart_is_readable(uart1))
-  {
-    // Read one byte from UART1
-    uint8_t ch = uart_getc(uart1);
-
-    // Check if UART0 is ready to transmit data
-    if (uart_is_writable(uart0))
-    {
-      // Send the received byte on UART0
-      uart_putc(uart0, ch);
-    }
-  }
-}
-
 
 
 int main()
 {
   // Serial
   stdio_init_all();
+
+
 
   // UART
   // uart0_setup();
@@ -151,11 +136,6 @@ int main()
   // // Now enable the UART to send interrupts - RX only
   // uart_set_irq_enables(UART_ID, true, false);
 
-  // uart1_setup();
-  // // Set the IRQ handler
-  // irq_set_exclusive_handler(UART1_IRQ, on_uart1_rx);
-  // irq_set_enabled(UART1_IRQ, true);
-  // uart_set_irq_enables(uart1, true, false);
 
   // Need Wifi For the LED GPIO
   if (cyw43_arch_init())
@@ -185,8 +165,8 @@ int main()
   arm_motor(&esc);
   printf("Done.\n");
 
-  leaky_init(&w_filter, 0.1f);
-  leaky_init(&a_filter, 0.1f);
+  leaky_init(&w_filter, 0.5f);
+  leaky_init(&a_filter, 0.5f);
 
   
   init_controller(&fc, 0.98f,delta_T_s,0,0,0);
@@ -201,6 +181,7 @@ int main()
 
   while (1)
   {
+    absolute_time_t startTime = get_absolute_time();
     // fetch new imu data
     mpu9250_update(&imu);
     float wf[3];
@@ -217,13 +198,8 @@ int main()
     //        af[0], af[1], af[2]);
 
     update_controller(&fc, wf, af);
-    
 
-
-
-
-
-    printf("Roll: %f, Pitch: %f, Yaw: %f\n", fc.roll, fc.pitch, fc.yaw);
+    printf("Roll: %.2f, Pitch: %.2f, Yaw: %.2f, dRoll: %.2f, dPitch: %.2f, dYaw: %.2f, d2Roll: %.2f, d2Pitch: %.2f, d2Yaw: %.2f\n", fc.x.roll, fc.x.pitch, fc.x.yaw, fc.x.d_roll, fc.x.d_pitch, fc.dx.d2_yaw, fc.dx.d2_roll, fc.dx.d2_pitch, fc.dx.d2_yaw);
 
     // displays the current throttle
     if (new_input)
@@ -248,6 +224,13 @@ int main()
       motor_control(&esc, 0.0, 3);
     }
 
-    sleep_ms(delta_T_ms);
+    
+
+    absolute_time_t endTime = get_absolute_time();
+    int64_t time_diff_ms = absolute_time_diff_us(startTime, endTime) / 1000; // Convert microseconds to milliseconds
+    //to achieve a fixed control loop time, if possible 
+    u_int32_t sleep_time_ms = delta_T_ms - time_diff_ms >= 0 ? delta_T_ms - time_diff_ms : 0;
+    sleep_ms(sleep_time_ms);
+    printf("cycle time: %lld ms, ", time_diff_ms<=delta_T_ms?delta_T_ms:time_diff_ms);
   }
 }

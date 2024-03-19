@@ -8,7 +8,7 @@
 
 typedef struct
 {
-  float alpha;      // The leaky coefficient
+  float alpha;      // The leaky coefficient [0,1] "how much of new data we are using?"
   int size;
   float prev[VECTOR_SIZE];
 } leaky_lp;
