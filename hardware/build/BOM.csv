@@ -1,6 +1,0 @@
-Designator,Footprint,Comment
-C3,C_0805_2012Metric,0.1uF
-C2,C_0805_2012Metric,10uF
-L1,L_Abracon_ASPI-4030S,4.7uH
-Regulator1,TSOT-23-6,AP63203WU
-"C4,C5",C_0805_2012Metric,22uF

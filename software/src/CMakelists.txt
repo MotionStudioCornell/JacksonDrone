@@ -18,7 +18,7 @@ pico_enable_stdio_uart(P2 1)
 # add_compile_options(-Ofast)
 
 # must match with executable name and source file names
-target_sources(P2 PRIVATE P2.c ../lib/MPU9250/mpu9250.c ../lib/ESC/esc.c ../lib/Filter/leaky_LP.c ../lib/Radio/radio.c)
+target_sources(P2 PRIVATE P2.c ../lib/MPU9250/mpu9250.c ../lib/ESC/esc.c ../lib/Filter/leaky_LP.c ../lib/Radio/radio.c ../lib/Control/controller.c)
   # Add pico_multicore which is required for multicore functionality
 target_link_libraries(P2 pico_stdlib hardware_spi hardware_pwm hardware_irq hardware_clocks pico_cyw43_arch_none hardware_uart)
 

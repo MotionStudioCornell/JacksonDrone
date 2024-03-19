@@ -231,6 +231,30 @@ P2.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/P2.c.s
 .PHONY : P2.c.s
 
+Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.obj: Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.c.obj
+.PHONY : Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.c.obj
+.PHONY : Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.c.obj
+
+Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.i: Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.c.i
+.PHONY : Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.c.i
+.PHONY : Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.c.i
+
+Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.s: Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.c.s
+.PHONY : Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.c.s
+.PHONY : Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.c.s
+
 Users/deemo/Desktop/workspace/Drone/BD/software/lib/ESC/esc.obj: Users/deemo/Desktop/workspace/Drone/BD/software/lib/ESC/esc.c.obj
 .PHONY : Users/deemo/Desktop/workspace/Drone/BD/software/lib/ESC/esc.obj
 
@@ -1729,6 +1753,9 @@ help:
 	@echo "... P2.obj"
 	@echo "... P2.i"
 	@echo "... P2.s"
+	@echo "... Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.obj"
+	@echo "... Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.i"
+	@echo "... Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.s"
 	@echo "... Users/deemo/Desktop/workspace/Drone/BD/software/lib/ESC/esc.obj"
 	@echo "... Users/deemo/Desktop/workspace/Drone/BD/software/lib/ESC/esc.i"
 	@echo "... Users/deemo/Desktop/workspace/Drone/BD/software/lib/ESC/esc.s"

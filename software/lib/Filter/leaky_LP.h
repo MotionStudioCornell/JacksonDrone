@@ -10,7 +10,7 @@ typedef struct
 {
   float alpha;      // The leaky coefficient
   int size;
-  float prev[VECTOR_SIZE]
+  float prev[VECTOR_SIZE];
 } leaky_lp;
 
 

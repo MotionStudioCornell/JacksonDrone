@@ -9,8 +9,10 @@
 #include "../lib/MPU9250/mpu9250.h"
 #include "../lib/ESC/esc.h"
 #include "../lib/Filter/leaky_LP.h"
+#include "../lib/Control/controller.h"
 // #include "../lib/Radio/radio.h"
 #include "pico/cyw43_arch.h"
+#include <math.h>
 
 // Connection
 // GPIO 4(pin 6)MISO / spi0_rx→ ADO on MPU9250 board
@@ -43,6 +45,16 @@
 
 static mpu9250 imu;
 static ESC esc;
+// Low pass
+static leaky_lp w_filter;
+static leaky_lp a_filter;
+
+static controller fc;
+
+
+#define delta_T_ms 10
+#define delta_T_s delta_T_ms / 1000.0
+
 
 void uart0_setup()
 {
@@ -64,6 +76,7 @@ void uart0_setup()
 volatile int buffer_index = 0;
 volatile float throttle = 0.0;
 volatile bool new_input = true;
+
 void uart0_irq_handler()
 {
   char buffer[10];
@@ -123,24 +136,26 @@ void on_uart1_rx()
   }
 }
 
+
+
 int main()
 {
   // Serial
   stdio_init_all();
 
   // UART
-  uart0_setup();
-  // And set up and enable the interrupt handlers
-  irq_set_exclusive_handler(UART0_IRQ, uart0_irq_handler);
-  irq_set_enabled(UART0_IRQ, true);
-  // Now enable the UART to send interrupts - RX only
-  uart_set_irq_enables(UART_ID, true, false);
+  // uart0_setup();
+  // // And set up and enable the interrupt handlers
+  // irq_set_exclusive_handler(UART0_IRQ, uart0_irq_handler);
+  // irq_set_enabled(UART0_IRQ, true);
+  // // Now enable the UART to send interrupts - RX only
+  // uart_set_irq_enables(UART_ID, true, false);
 
-  uart1_setup();
-  // Set the IRQ handler
-  irq_set_exclusive_handler(UART1_IRQ, on_uart1_rx);
-  irq_set_enabled(UART1_IRQ, true);
-  uart_set_irq_enables(uart1, true, false);
+  // uart1_setup();
+  // // Set the IRQ handler
+  // irq_set_exclusive_handler(UART1_IRQ, on_uart1_rx);
+  // irq_set_enabled(UART1_IRQ, true);
+  // uart_set_irq_enables(uart1, true, false);
 
   // Need Wifi For the LED GPIO
   if (cyw43_arch_init())
@@ -170,12 +185,12 @@ int main()
   arm_motor(&esc);
   printf("Done.\n");
 
-  // Low pass
-  leaky_lp w_filter;
-  leaky_lp a_filter;
+  leaky_init(&w_filter, 0.1f);
+  leaky_init(&a_filter, 0.1f);
 
-  leaky_init(&w_filter, 0.2f);
-  leaky_init(&a_filter, 0.2f);
+  
+  init_controller(&fc, 0.98f,delta_T_s,0,0,0);
+
 
   // blink to show we are ready
   cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
@@ -201,6 +216,15 @@ int main()
     //        imu.a[0], imu.a[1], imu.a[2],
     //        af[0], af[1], af[2]);
 
+    update_controller(&fc, wf, af);
+    
+
+
+
+
+
+    printf("Roll: %f, Pitch: %f, Yaw: %f\n", fc.roll, fc.pitch, fc.yaw);
+
     // displays the current throttle
     if (new_input)
     {
@@ -224,6 +248,6 @@ int main()
       motor_control(&esc, 0.0, 3);
     }
 
-    sleep_ms(10);
+    sleep_ms(delta_T_ms);
   }
 }

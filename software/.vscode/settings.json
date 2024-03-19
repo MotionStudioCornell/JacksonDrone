@@ -22,7 +22,8 @@
     "irq.h": "c",
     "mpu9250.h": "c",
     "stdlib.h": "c",
-    "leaky_lp.h": "c"
+    "leaky_lp.h": "c",
+    "math.h": "c"
   },
   "cmake.sourceDirectory": "/Users/deemo/Desktop/workspace/Drone/BD/software/src"
 }
