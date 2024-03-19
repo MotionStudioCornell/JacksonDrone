@@ -49,6 +49,7 @@ typedef struct
 
 typedef struct
   {
+    //only PD, no I term yet
     state x;
     d_state dx;
 
