@@ -59,19 +59,47 @@ void init_controller(controller *my_controller, float alpha, float dT, float Kp,
   set_state(my_controller, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
 }
 
+void saturate_control(control *u, float cap)
+{
+  u->t1 = fmax(-cap, fmin(u->t1, cap));
+  u->t2 = fmax(-cap, fmin(u->t2, cap));
+  u->t3 = fmax(-cap, fmin(u->t3, cap));
+  u->t4 = fmax(-cap, fmin(u->t4, cap));
+}
+
 void update_u(controller *my_controller)
 {
   state diff = get_state_diff(my_controller->x, my_controller->target);
-
+  float motor1 = 0.0f;
+  float motor2 = 0.0f;
+  float motor3 = 0.0f;
+  float motor4 = 0.0f;
   // Roll
   float roll_P = my_controller->Kp * (diff.roll);
 
-  my_controller->u.t1 = roll_P / 2;
-  my_controller->u.t2 = roll_P / 2;
+  motor1 += roll_P / 2;
+  motor2 += roll_P / 2;
 
-  my_controller->u.t3 = -roll_P / 2;
-  my_controller->u.t4 = -roll_P / 2;
+  motor3 += -roll_P / 2;
+  motor4 += -roll_P / 2;
 
+  // Pitch
+
+  float pitch_P = my_controller->Kp * (diff.pitch);
+
+  motor2 += pitch_P / 2;
+  motor4 += pitch_P / 2;
+
+  motor1 += -pitch_P / 2;
+  motor3 += -pitch_P / 2;
+
+  my_controller->u.t1 = motor1;
+  my_controller->u.t2 = motor2;
+  my_controller->u.t3 = motor3;
+  my_controller->u.t4 = motor4;
+
+  // saturate the control to [-cap, cap]
+  saturate_control(&my_controller->u, 30);
   print_control(my_controller->u);
 }
 

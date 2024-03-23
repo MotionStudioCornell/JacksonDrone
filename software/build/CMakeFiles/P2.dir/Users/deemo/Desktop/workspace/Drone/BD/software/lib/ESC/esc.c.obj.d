@@ -33,6 +33,7 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/Drone/BD/software/lib/ESC/esc.c.
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/stdlib.h \
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/machine/stdlib.h \
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/alloca.h \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/math.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_base/include/pico.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_base/include/pico/types.h \

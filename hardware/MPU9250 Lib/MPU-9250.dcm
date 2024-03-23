@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MPU-9250
+D 9-Axis MotionTracking Device (EOL)
+K
+F https://media.digikey.com/pdf/Data%20Sheets/TDK%20PDFs/MPU-9250_Rev_1.1.pdf
+$ENDCMP
+#
+#End Doc Library

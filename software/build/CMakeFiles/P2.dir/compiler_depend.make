@@ -87,12 +87,12 @@ CMakeFiles/P2.dir/P2.c.obj: /Users/deemo/Desktop/workspace/Drone/BD/software/src
   /Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h \
   /Users/deemo/Desktop/workspace/Drone/BD/software/lib/MPU9250/mpu9250.h \
   /Users/deemo/Desktop/workspace/Drone/BD/software/lib/ESC/esc.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/math.h \
   /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
   /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
   /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h \
   /Users/deemo/Desktop/workspace/Drone/BD/software/lib/Filter/leaky_LP.h \
   /Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.h \
-  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/math.h \
   /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/include/pico/cyw43_arch.h \
   /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43.h \
   /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_config.h \
@@ -124,7 +124,22 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/co
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/machine/_default_types.h \
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/sys/lock.h \
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/sys/cdefs.h \
-  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/_ansi.h
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/_ansi.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/stdio.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/lib/gcc/arm-none-eabi/10.2.1/include/stdarg.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/sys/types.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/sys/_stdint.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/machine/endian.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/machine/_endian.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/sys/select.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/sys/_sigset.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/sys/_timeval.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/sys/timespec.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/sys/_timespec.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/sys/_pthreadtypes.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/sys/sched.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/machine/types.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/sys/stdio.h
 
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/Drone/BD/software/lib/ESC/esc.c.obj: /Users/deemo/Desktop/workspace/Drone/BD/software/lib/ESC/esc.c \
   /Users/deemo/Desktop/workspace/Drone/BD/software/lib/ESC/esc.h \
@@ -160,6 +175,7 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/Drone/BD/software/lib/ESC/esc.c.
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/stdlib.h \
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/machine/stdlib.h \
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/alloca.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/math.h \
   /Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
   /Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_base/include/pico.h \
   /Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
@@ -3324,8 +3340,6 @@ pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h:
 
 /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/include/pico/cyw43_arch.h:
 
-/opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/math.h:
-
 /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h:
 
 /Users/deemo/Desktop/workspace/Drone/BD/software/lib/Control/controller.h:
@@ -3343,6 +3357,8 @@ generated/pico_base/pico/version.h:
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/sys/features.h:
 
 /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h:
+
+/opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/math.h:
 
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10-2020-q4-major/gcc/arm-none-eabi/include/sys/types.h:
 

@@ -28,7 +28,7 @@
 
 // ESC const
 #define PWM_WRAP 100000 // counts
-#define PWM_FREQ 50     // hz
+#define PWM_FREQ 50    // hz
 #define MAX_DUTY 0.1
 #define MIN_DUTY 0.05
 
@@ -49,14 +49,14 @@ static ESC esc;
 // Low pass
 static leaky_lp w_filter;
 static leaky_lp a_filter;
-//controller
+// controller
 static controller fc;
 
-//control cycle timing
+// control cycle timing
 #define delta_T_ms 20
 #define delta_T_s delta_T_ms / 1000.0
 
-
+volatile int buffer_index = 0;
 volatile float throttle = 0.0;
 volatile bool new_input = true;
 
@@ -65,8 +65,8 @@ void uart0_setup()
   // Set up our UART with a basic baud rate.
   uart_init(UART_ID, 115200);
 
-  gpio_set_function(12, GPIO_FUNC_UART);
-  gpio_set_function(13, GPIO_FUNC_UART);
+  gpio_set_function(0, GPIO_FUNC_UART);
+  gpio_set_function(1, GPIO_FUNC_UART);
 
   uart_set_baudrate(UART_ID, 115200);
   // Set UART flow control CTS/RTS, we don't want these, so turn them off
@@ -77,28 +77,44 @@ void uart0_setup()
   uart_set_fifo_enabled(UART_ID, false);
 }
 
+void uart0_irq_handler()
+{
+  char buffer[10];
+  new_input = true;
 
+  while (uart_is_readable(uart0))
+  {
+    // Read a single character
+    char ch = uart_getc(uart0);
 
-
-
-
-
+    // If the character is a digit, add it to the buffer
+    if (ch >= '0' && ch <= '9')
+    {
+      buffer[buffer_index++] = ch;
+    }
+    // If the character is a newline or carriage return, convert the buffer to a number
+    else if (ch == '\n' || ch == '\r')
+    {
+      buffer[buffer_index] = '\0';     // Null-terminate the string
+      throttle = atoi(buffer); // Convert the string to a number
+      buffer_index = 0;                // Reset the buffer index
+    }
+  }
+}
 
 int main()
+
 {
   // Serial
   stdio_init_all();
 
-
-
   // UART
-  // uart0_setup();
-  // // And set up and enable the interrupt handlers
-  // irq_set_exclusive_handler(UART0_IRQ, uart0_irq_handler);
-  // irq_set_enabled(UART0_IRQ, true);
-  // // Now enable the UART to send interrupts - RX only
-  // uart_set_irq_enables(UART_ID, true, false);
-
+  uart0_setup();
+  // And set up and enable the interrupt handlers
+  irq_set_exclusive_handler(UART0_IRQ, uart0_irq_handler);
+  irq_set_enabled(UART0_IRQ, true);
+  // Now enable the UART to send interrupts - RX only
+  uart_set_irq_enables(UART_ID, true, false);
 
   // Need Wifi For the LED GPIO
   if (cyw43_arch_init())
@@ -131,16 +147,24 @@ int main()
   leaky_init(&w_filter, 0.5f);
   leaky_init(&a_filter, 0.5f);
 
-  
-  init_controller(&fc, 0.98f,delta_T_s,5,0,0);
-
+  init_controller(&fc, 0.98f, delta_T_s, 3.0, 0, 0);
 
   // blink to show we are ready
   cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
-  sleep_ms(50);
+  sleep_ms(100);
   cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 0);
-  sleep_ms(50);
+  sleep_ms(100);
   cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
+
+  // very cringe bug, need this to actually arm it
+  // for (int i = 0; i < 30; i++)
+  // {
+  //   motor_control(&esc, (float)i, 1);
+  //   motor_control(&esc, (float)i, 2);
+  //   motor_control(&esc, (float)i, 3);
+  //   motor_control(&esc, (float)i, 4);
+  //   sleep_ms(500);
+  // }
 
   while (1)
   {
@@ -154,11 +178,11 @@ int main()
     leaky_update(&a_filter, imu.a, af);
 
     // good for arduino serial plotter:
-    // printf("wx:%f, wy:%f, wz:%f, wxf:%f, wyf:%f, wzf:%f, ax:%f, ay:%f, az:%f, axf:%f, ayf:%f, azf:%f\n",
-    //        imu.w[0], imu.w[1], imu.w[2],
-    //        wf[0], wf[1], wf[2],
-    //        imu.a[0], imu.a[1], imu.a[2],
-    //        af[0], af[1], af[2]);
+    //  printf("wx:%f, wy:%f, wz:%f, wxf:%f, wyf:%f, wzf:%f, ax:%f, ay:%f, az:%f, axf:%f, ayf:%f, azf:%f\n",
+    //         imu.w[0], imu.w[1], imu.w[2],
+    //         wf[0], wf[1], wf[2],
+    //         imu.a[0], imu.a[1], imu.a[2],
+    //         af[0], af[1], af[2]);
 
     update_controller(&fc, wf, af);
 
@@ -166,33 +190,36 @@ int main()
     if (new_input)
     {
       new_input = false;
-      printf("Setting control for all motors as: %.1f \% \n", throttle * 100.0);
+      printf("Setting control for all motors as: %.1f \% \n", throttle);
     }
 
-    // if armed
-    if (true)
-    {
-      motor_control(&esc, throttle, 0);
-      motor_control(&esc, throttle, 1);
-      motor_control(&esc, throttle, 2);
-      motor_control(&esc, throttle, 3);
-    }
-    else
-    {
-      motor_control(&esc, 0.0, 0);
-      motor_control(&esc, 0.0, 1);
-      motor_control(&esc, 0.0, 2);
-      motor_control(&esc, 0.0, 3);
-    }
-
+    motor_control(&esc, throttle, 1);
+    motor_control(&esc, throttle, 2);
+    motor_control(&esc, throttle, 3);
+    motor_control(&esc, throttle, 4);
     
+    // if armed
+    // if (true)
+    // {
+    //   motor_control(&esc, 30.0f + fc.u.t1, 1);
+    //   motor_control(&esc, 30.0f + fc.u.t2, 2);
+    //   motor_control(&esc, 30.0f + fc.u.t3, 3);
+    //   motor_control(&esc, 30.0f + fc.u.t4, 4);
+    // }
+    // else
+    // {
+    //   motor_control(&esc, 0.0, 1);
+    //   motor_control(&esc, 0.0, 2);
+    //   motor_control(&esc, 0.0, 3);
+    //   motor_control(&esc, 0.0, 4);
+    //}
 
     absolute_time_t endTime = get_absolute_time();
 
-    int64_t time_diff_ms = absolute_time_diff_us(startTime, endTime) / 1000; 
-    //to achieve a fixed control loop time, if possible 
+    int64_t time_diff_ms = absolute_time_diff_us(startTime, endTime) / 1000;
+    // to achieve a fixed control loop time, if possible
     u_int32_t sleep_time_ms = delta_T_ms - time_diff_ms >= 0 ? delta_T_ms - time_diff_ms : 0;
     sleep_ms(sleep_time_ms);
-    printf("cycle time: %lld ms, ", time_diff_ms<=delta_T_ms?delta_T_ms:time_diff_ms);
+    printf("cycle time: %lld ms, ", time_diff_ms <= delta_T_ms ? delta_T_ms : time_diff_ms);
   }
 }
