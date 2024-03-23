@@ -193,26 +193,21 @@ int main()
       printf("Setting control for all motors as: %.1f \% \n", throttle);
     }
 
-    motor_control(&esc, throttle, 1);
-    motor_control(&esc, throttle, 2);
-    motor_control(&esc, throttle, 3);
-    motor_control(&esc, throttle, 4);
-    
     // if armed
-    // if (true)
-    // {
-    //   motor_control(&esc, 30.0f + fc.u.t1, 1);
-    //   motor_control(&esc, 30.0f + fc.u.t2, 2);
-    //   motor_control(&esc, 30.0f + fc.u.t3, 3);
-    //   motor_control(&esc, 30.0f + fc.u.t4, 4);
-    // }
-    // else
-    // {
-    //   motor_control(&esc, 0.0, 1);
-    //   motor_control(&esc, 0.0, 2);
-    //   motor_control(&esc, 0.0, 3);
-    //   motor_control(&esc, 0.0, 4);
-    //}
+    if (true)
+    {
+      motor_control(&esc, 30.0f + fc.u.t1, 1);
+      motor_control(&esc, 30.0f + fc.u.t2, 2);
+      motor_control(&esc, 30.0f + fc.u.t3, 3);
+      motor_control(&esc, 30.0f + fc.u.t4, 4);
+    }
+    else
+    {
+      motor_control(&esc, 0.0, 1);
+      motor_control(&esc, 0.0, 2);
+      motor_control(&esc, 0.0, 3);
+      motor_control(&esc, 0.0, 4);
+    }
 
     absolute_time_t endTime = get_absolute_time();
 

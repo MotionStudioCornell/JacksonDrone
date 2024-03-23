@@ -27,25 +27,27 @@ void esc_setup(ESC *myesc, uint32_t PIN_PWM[], uint32_t PWM_FREQ, uint32_t PWM_W
 
 void cali_motor(ESC *myesc)
 {
-  //  MIN -> wait for 2 beeps
+  //  
 
   for (int i = 0; i < 4; i++)
   {
     pwm_set_gpio_level(myesc->PIN_PWM[i], myesc->level_range[0]);
   }
+
+
 
   for (int i = 0; i < 4; i++)
   {
     pwm_set_gpio_level(myesc->PIN_PWM[i], myesc->level_range[1]);
   }
 
-  sleep_ms(2000);
+  sleep_ms(3500);
 
   for (int i = 0; i < 4; i++)
   {
     pwm_set_gpio_level(myesc->PIN_PWM[i], myesc->level_range[0]);
   }
-  sleep_ms(2000);
+  sleep_ms(3500);
 }
 
 void arm_motor(ESC *myesc)
