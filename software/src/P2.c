@@ -49,12 +49,16 @@ static ESC esc;
 // Low pass
 static leaky_lp w_filter;
 static leaky_lp a_filter;
-
+//controller
 static controller fc;
 
+//control cycle timing
 #define delta_T_ms 20
 #define delta_T_s delta_T_ms / 1000.0
 
+
+volatile float throttle = 0.0;
+volatile bool new_input = true;
 
 void uart0_setup()
 {
@@ -73,51 +77,10 @@ void uart0_setup()
   uart_set_fifo_enabled(UART_ID, false);
 }
 
-volatile int buffer_index = 0;
-volatile float throttle = 0.0;
-volatile bool new_input = true;
 
-void uart0_irq_handler()
-{
-  char buffer[10];
-  new_input = true;
 
-  while (uart_is_readable(uart0))
-  {
-    // Read a single character
-    char ch = uart_getc(uart0);
 
-    // If the character is a digit, add it to the buffer
-    if (ch >= '0' && ch <= '9')
-    {
-      buffer[buffer_index++] = ch;
-    }
-    // If the character is a newline or carriage return, convert the buffer to a number
-    else if (ch == '\n' || ch == '\r')
-    {
-      buffer[buffer_index] = '\0';     // Null-terminate the string
-      throttle = atoi(buffer) / 100.0; // Convert the string to a number
-      buffer_index = 0;                // Reset the buffer index
-    }
-  }
-}
 
-void uart1_setup()
-{
-  // Set up our UART with a basic baud rate.
-  uart_init(uart1, 9600);
-
-  gpio_set_function(4, GPIO_FUNC_UART);
-  gpio_set_function(5, GPIO_FUNC_UART);
-
-  uart_set_baudrate(uart1, 9600);
-  // Set UART flow control CTS/RTS, we don't want these, so turn them off
-  uart_set_hw_flow(uart1, false, false);
-  // Set our data format
-  uart_set_format(uart1, DATA_BITS, STOP_BITS, PARITY);
-  // Turn off FIFO's - we want to do this character by character
-  uart_set_fifo_enabled(uart1, false);
-}
 
 
 
@@ -169,7 +132,7 @@ int main()
   leaky_init(&a_filter, 0.5f);
 
   
-  init_controller(&fc, 0.98f,delta_T_s,0,0,0);
+  init_controller(&fc, 0.98f,delta_T_s,5,0,0);
 
 
   // blink to show we are ready
@@ -199,8 +162,6 @@ int main()
 
     update_controller(&fc, wf, af);
 
-    printf("Roll: %.2f, Pitch: %.2f, Yaw: %.2f, dRoll: %.2f, dPitch: %.2f, dYaw: %.2f, d2Roll: %.2f, d2Pitch: %.2f, d2Yaw: %.2f\n", fc.x.roll, fc.x.pitch, fc.x.yaw, fc.x.d_roll, fc.x.d_pitch, fc.dx.d2_yaw, fc.dx.d2_roll, fc.dx.d2_pitch, fc.dx.d2_yaw);
-
     // displays the current throttle
     if (new_input)
     {
@@ -227,7 +188,8 @@ int main()
     
 
     absolute_time_t endTime = get_absolute_time();
-    int64_t time_diff_ms = absolute_time_diff_us(startTime, endTime) / 1000; // Convert microseconds to milliseconds
+
+    int64_t time_diff_ms = absolute_time_diff_us(startTime, endTime) / 1000; 
     //to achieve a fixed control loop time, if possible 
     u_int32_t sleep_time_ms = delta_T_ms - time_diff_ms >= 0 ? delta_T_ms - time_diff_ms : 0;
     sleep_ms(sleep_time_ms);
