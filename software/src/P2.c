@@ -102,6 +102,53 @@ void uart0_irq_handler()
   }
 }
 
+//kp=x, kd=y, in serial to set values
+void PD_handler()
+{
+  static char buffer[32];
+  static int buffer_index = 0;
+  char ch;
+  new_input = true;
+
+  while (uart_is_readable(uart0))
+  {
+    // Read a single character
+    ch = uart_getc(uart0);
+
+    // Check for buffer overflow
+    if (buffer_index < (sizeof(buffer) - 1))
+    {
+      // If the character is not a newline or carriage return, add it to the buffer
+      if (ch != '\n' && ch != '\r')
+      {
+        buffer[buffer_index++] = ch;
+      }
+      else
+      {
+        buffer[buffer_index] = '\0'; // Null-terminate the string
+
+        // Check if the input is for kp
+        if (strncmp(buffer, "kp=", 3) == 0)
+        {
+          fc.Kp = atoi(buffer + 3); // Convert the string to a number and assign to kp
+        }
+        // Check if the input is for kd
+        else if (strncmp(buffer, "kd=", 3) == 0)
+        {
+          fc.Kd = atoi(buffer + 3); // Convert the string to a number and assign to kd
+        }
+        // Add more else if clauses here for other variables
+
+        buffer_index = 0; // Reset the buffer index
+      }
+    }
+    else
+    {
+      // Handle buffer overflow, for example, by clearing the buffer
+      buffer_index = 0;
+    }
+  }
+}
 int main()
 
 {
@@ -111,7 +158,7 @@ int main()
   // UART
   uart0_setup();
   // And set up and enable the interrupt handlers
-  irq_set_exclusive_handler(UART0_IRQ, uart0_irq_handler);
+  irq_set_exclusive_handler(UART0_IRQ, PD_handler);
   irq_set_enabled(UART0_IRQ, true);
   // Now enable the UART to send interrupts - RX only
   uart_set_irq_enables(UART_ID, true, false);
@@ -147,7 +194,7 @@ int main()
   leaky_init(&w_filter, 0.5f);
   leaky_init(&a_filter, 0.5f);
 
-  init_controller(&fc, 0.98f, delta_T_s, 4.0, 0, 0.5);
+  init_controller(&fc, 0.98f, delta_T_s, 3.0, 0, 1.0);
 
   // blink to show we are ready
   cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
@@ -181,24 +228,16 @@ int main()
     if (new_input)
     {
       new_input = false;
-      printf("Setting control for all motors as: %.1f \% \n", throttle);
+      // printf("Setting control for all motors as: %.1f \% \n", throttle);
+      printf("Kp = : %.1f, Kd = : %.1f \n", fc.Kp, fc.Kd);
     }
 
     // if armed
-    if (true)
-    {
       motor_control(&esc, 30.0f + fc.u.t1, 1);
       motor_control(&esc, 30.0f + fc.u.t2, 2);
       motor_control(&esc, 30.0f + fc.u.t3, 3);
       motor_control(&esc, 30.0f + fc.u.t4, 4);
-    }
-    else
-    {
-      motor_control(&esc, 0.0, 1);
-      motor_control(&esc, 0.0, 2);
-      motor_control(&esc, 0.0, 3);
-      motor_control(&esc, 0.0, 4);
-    }
+ 
 
     absolute_time_t endTime = get_absolute_time();
 
@@ -207,5 +246,6 @@ int main()
     u_int32_t sleep_time_ms = delta_T_ms - time_diff_ms >= 0 ? delta_T_ms - time_diff_ms : 0;
     sleep_ms(sleep_time_ms);
     printf("cycle time: %lld ms, ", time_diff_ms <= delta_T_ms ? delta_T_ms : time_diff_ms);
+    // print_control(fc.u);
   }
 }
