@@ -136,9 +136,9 @@ int main()
   uint32_t PWM_PIN[4] = {PIN_PWM0, PIN_PWM1, PIN_PWM2, PIN_PWM3};
   esc_setup(&esc, PWM_PIN, PWM_FREQ, PWM_WRAP, MIN_DUTY, MAX_DUTY);
 
-  printf("Calibrating ESC...\n");
-  cali_motor(&esc);
-  printf("Done.\n");
+  // printf("Calibrating ESC...\n");
+  // cali_motor(&esc);
+  // printf("Done.\n");
 
   printf("Arming ESC...\n");
   arm_motor(&esc);
@@ -147,7 +147,7 @@ int main()
   leaky_init(&w_filter, 0.5f);
   leaky_init(&a_filter, 0.5f);
 
-  init_controller(&fc, 0.98f, delta_T_s, 3.0, 0, 0);
+  init_controller(&fc, 0.98f, delta_T_s, 4.0, 0, 0.5);
 
   // blink to show we are ready
   cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
@@ -156,15 +156,6 @@ int main()
   sleep_ms(100);
   cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
 
-  // very cringe bug, need this to actually arm it
-  // for (int i = 0; i < 30; i++)
-  // {
-  //   motor_control(&esc, (float)i, 1);
-  //   motor_control(&esc, (float)i, 2);
-  //   motor_control(&esc, (float)i, 3);
-  //   motor_control(&esc, (float)i, 4);
-  //   sleep_ms(500);
-  // }
 
   while (1)
   {
