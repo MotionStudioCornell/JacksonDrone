@@ -77,30 +77,6 @@ void uart0_setup()
   uart_set_fifo_enabled(UART_ID, false);
 }
 
-void uart0_irq_handler()
-{
-  char buffer[10];
-  new_input = true;
-
-  while (uart_is_readable(uart0))
-  {
-    // Read a single character
-    char ch = uart_getc(uart0);
-
-    // If the character is a digit, add it to the buffer
-    if (ch >= '0' && ch <= '9')
-    {
-      buffer[buffer_index++] = ch;
-    }
-    // If the character is a newline or carriage return, convert the buffer to a number
-    else if (ch == '\n' || ch == '\r')
-    {
-      buffer[buffer_index] = '\0';     // Null-terminate the string
-      throttle = atoi(buffer); // Convert the string to a number
-      buffer_index = 0;                // Reset the buffer index
-    }
-  }
-}
 
 //kp=x, kd=y, in serial to set values
 void PD_handler()
@@ -137,7 +113,10 @@ void PD_handler()
         {
           fc.Kd = atoi(buffer + 3); // Convert the string to a number and assign to kd
         }
-        // Add more else if clauses here for other variables
+        else if (strncmp(buffer, "th=", 3) == 0)
+        {
+          throttle = atoi(buffer + 3); // Convert the string to a number and assign to kd
+        }
 
         buffer_index = 0; // Reset the buffer index
       }
@@ -228,16 +207,14 @@ int main()
     if (new_input)
     {
       new_input = false;
-      // printf("Setting control for all motors as: %.1f \% \n", throttle);
-      printf("Kp = : %.1f, Kd = : %.1f \n", fc.Kp, fc.Kd);
+      printf("Kp = %.1f, Kd = %.1f, throttle = %.1f\n", fc.Kp, fc.Kd, throttle);
     }
 
     // if armed
-      motor_control(&esc, 30.0f + fc.u.t1, 1);
-      motor_control(&esc, 30.0f + fc.u.t2, 2);
-      motor_control(&esc, 30.0f + fc.u.t3, 3);
-      motor_control(&esc, 30.0f + fc.u.t4, 4);
- 
+    motor_control(&esc, throttle + fc.u.t1, 1);
+    motor_control(&esc, throttle + fc.u.t2, 2);
+    motor_control(&esc, throttle + fc.u.t3, 3);
+    motor_control(&esc, throttle + fc.u.t4, 4);
 
     absolute_time_t endTime = get_absolute_time();
 
@@ -245,7 +222,7 @@ int main()
     // to achieve a fixed control loop time, if possible
     u_int32_t sleep_time_ms = delta_T_ms - time_diff_ms >= 0 ? delta_T_ms - time_diff_ms : 0;
     sleep_ms(sleep_time_ms);
-    printf("cycle time: %lld ms, ", time_diff_ms <= delta_T_ms ? delta_T_ms : time_diff_ms);
+    // printf("cycle time: %lld ms, ", time_diff_ms <= delta_T_ms ? delta_T_ms : time_diff_ms);
     // print_control(fc.u);
   }
 }
