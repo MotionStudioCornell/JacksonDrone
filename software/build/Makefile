@@ -447,6 +447,438 @@ Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
 .PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
 
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.i: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.s: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.i: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.s: Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
+
 Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_sync/critical_section.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_sync/critical_section.obj
 
@@ -1407,6 +1839,30 @@ Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_double/double_v1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+
 Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj
 
@@ -1663,29 +2119,77 @@ Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
-Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj
 
 # target to build an object file
-Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 
-Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i
 
 # target to preprocess a source file
-Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 
-Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s
 
 # target to generate assembly for a file
-Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj
+
+# target to build an object file
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i
+
+# target to preprocess a source file
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s
+
+# target to generate assembly for a file
+Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2.dir/build.make CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+.PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
 Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj
@@ -1780,6 +2284,60 @@ help:
 	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.obj"
 	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.i"
 	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.s"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.s"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.s"
 	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_sync/critical_section.obj"
 	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_sync/critical_section.i"
 	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/common/pico_sync/critical_section.s"
@@ -1900,6 +2458,9 @@ help:
 	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_double/double_math.i"
 	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_double/double_math.s"
 	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s"
 	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj"
 	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj"
 	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i"
@@ -1932,9 +2493,15 @@ help:
 	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj"
 	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i"
 	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s"
-	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj"
-	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i"
-	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i"
+	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s"
 	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
 	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
 	@echo "... Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"

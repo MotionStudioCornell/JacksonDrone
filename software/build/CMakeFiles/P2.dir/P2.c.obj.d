@@ -72,7 +72,7 @@ CMakeFiles/P2.dir/P2.c.obj: \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
+ /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h \
@@ -91,6 +91,7 @@ CMakeFiles/P2.dir/P2.c.obj: \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h \
  /Users/deemo/Desktop/workspace/Drone/BD/software/src/../lib/Filter/leaky_LP.h \
  /Users/deemo/Desktop/workspace/Drone/BD/software/src/../lib/Control/controller.h \
+ /Users/deemo/Desktop/workspace/Drone/BD/software/src/../lib/Radio/radio.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/include/pico/cyw43_arch.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_config.h \

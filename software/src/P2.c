@@ -10,7 +10,7 @@
 #include "../lib/ESC/esc.h"
 #include "../lib/Filter/leaky_LP.h"
 #include "../lib/Control/controller.h"
-// #include "../lib/Radio/radio.h"
+#include "../lib/Radio/radio.h"
 #include "pico/cyw43_arch.h"
 #include <math.h>
 #include <time.h>
@@ -28,7 +28,7 @@
 
 // ESC const
 #define PWM_WRAP 100000 // counts
-#define PWM_FREQ 50    // hz
+#define PWM_FREQ 50     // hz
 #define MAX_DUTY 0.1
 #define MIN_DUTY 0.05
 
@@ -38,11 +38,14 @@
 #define PIN_PWM3 21
 
 // uart0
-
 #define UART_ID uart0
 #define DATA_BITS 8
 #define STOP_BITS 1
 #define PARITY UART_PARITY_NONE
+
+// RADIO
+#define RADIO_TX 8
+#define RADIO_RX 9
 
 static mpu9250 imu;
 static ESC esc;
@@ -51,13 +54,24 @@ static leaky_lp w_filter;
 static leaky_lp a_filter;
 // controller
 static controller fc;
+// radio
+static radio rdo;
+// #define RADIO_UART_ID uart1
+// #define BAUD_RATE 420000
+// #define DATA_BITS 8
+// #define STOP_BITS 1
+// #define PARITY UART_PARITY_NONE
+
+// #define CRSF_ADDRESS_CRSF_TRANSMITTER 0xEE
+// #define CRSF_ADDRESS_RADIO_TRANSMITTER 0xEA
+// #define CRSF_ADDRESS_FLIGHT_CONTROLLER 0xC8
+// #define CRSF_ADDRESS_CRSF_RECEIVER 0xEC
 
 // control cycle timing
 #define delta_T_ms 20
 #define delta_T_s delta_T_ms / 1000.0
 
 volatile int buffer_index = 0;
-volatile float throttle = 0.0;
 volatile bool new_input = true;
 
 void uart0_setup()
@@ -77,8 +91,7 @@ void uart0_setup()
   uart_set_fifo_enabled(UART_ID, false);
 }
 
-
-//kp=x, kd=y, in serial to set values
+// kp=x, kd=y, in serial to set values
 void PD_handler()
 {
   static char buffer[32];
@@ -113,10 +126,6 @@ void PD_handler()
         {
           fc.Kd = atoi(buffer + 3); // Convert the string to a number and assign to kd
         }
-        else if (strncmp(buffer, "th=", 3) == 0)
-        {
-          throttle = atoi(buffer + 3); // Convert the string to a number and assign to kd
-        }
 
         buffer_index = 0; // Reset the buffer index
       }
@@ -150,6 +159,8 @@ int main()
   }
   // Turn on the LED to show we are powered on
   cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
+  // RADIO
+  radio_setup(&rdo, RADIO_RX, RADIO_TX);
 
   // IMU stuff
   mpu9250_setup(&imu, PIN_CS, PIN_MISO, PIN_SCK, PIN_MOSI);
@@ -173,7 +184,7 @@ int main()
   leaky_init(&w_filter, 0.5f);
   leaky_init(&a_filter, 0.5f);
 
-  init_controller(&fc, 0.98f, delta_T_s, 3.0, 0, 1.0);
+  init_controller(&fc, 0.98f, delta_T_s, 1.0, 0, 2.0);
 
   // blink to show we are ready
   cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
@@ -181,7 +192,6 @@ int main()
   cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 0);
   sleep_ms(100);
   cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
-
 
   while (1)
   {
@@ -207,14 +217,19 @@ int main()
     if (new_input)
     {
       new_input = false;
-      printf("Kp = %.1f, Kd = %.1f, throttle = %.1f\n", fc.Kp, fc.Kd, throttle);
+      printf("Kp = %.1f, Kd = %.1f, throttle = %.1f , %s\n", fc.Kp, fc.Kd, rdo.throttle, rdo.controller_armed ? "ARMed" : "NOT-ARMed");
     }
 
     // if armed
-    motor_control(&esc, throttle + fc.u.t1, 1);
-    motor_control(&esc, throttle + fc.u.t2, 2);
-    motor_control(&esc, throttle + fc.u.t3, 3);
-    motor_control(&esc, throttle + fc.u.t4, 4);
+    motor_control(&esc, rdo.throttle + fc.u.t1, 1);
+    motor_control(&esc, rdo.throttle + fc.u.t2, 2);
+    motor_control(&esc, rdo.throttle + fc.u.t3, 3);
+    motor_control(&esc, rdo.throttle + fc.u.t4, 4);
+
+    // motor_control(&esc, 20, 1);
+    // motor_control(&esc, 20, 2);
+    // motor_control(&esc, 20, 3);
+    // motor_control(&esc, 20, 4);
 
     absolute_time_t endTime = get_absolute_time();
 

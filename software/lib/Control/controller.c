@@ -108,7 +108,7 @@ void update_u(controller *my_controller)
   my_controller->u.t4 = motor4;
 
   // saturate the control to [-cap, cap]
-  saturate_control(&my_controller->u, 50);
+  saturate_control(&my_controller->u, 20);
 }
 
 void update_complementry_filter(controller *my_controller, float w[VECTOR_SIZE], float a[VECTOR_SIZE])

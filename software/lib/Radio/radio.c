@@ -16,7 +16,6 @@ void radio_setup(radio *myradio, uint32_t pin_rx, uint32_t pin_tx)
   // Set the TX and RX pins by using the function select on the GPIO
   // Set datasheet for more information on function select
   gpio_set_function(myradio->PIN_TX, GPIO_FUNC_UART);
-  // gpio_set_function(9, GPIO_FUNC_UART);
   gpio_set_function(myradio->PIN_RX, GPIO_FUNC_UART);
   uart_set_irq_enables(RADIO_UART_ID, true, false);
 
@@ -52,22 +51,22 @@ void radio_irq_handler()
       }
       else
       {
-        // for (int i = 0; i < 16; i++)
-        // {
-        //   printf("[%02X, %d], ", radio_buffer[i], radio_buffer[i]); // Print each byte as a 2-digit hexadecimal number
-        // }
-        // printf("\n"); // Print a newline at the end
-        // 45-255 C0, 0-196 C1 14_arm
+        for (int i = 0; i < 16; i++)
+        {
+          printf("[%02X, %d], ", global_radio->radio_buffer[i], global_radio->radio_buffer[i]); // Print each byte as a 2-digit hexadecimal number
+        }
+        printf("\n"); // Print a newline at the end
+        //45-255 C0, 0-196 C1 14_arm
 
         // lower half of the left joystick
         if (global_radio->radio_buffer[7] == 0xC0)
         {
-          global_radio->throttle = (global_radio->radio_buffer[6] - 45.0) / (255.0 - 45.0) * 0.5;
+          global_radio->throttle = ((global_radio->radio_buffer[6] - 45.0) / (255.0 - 45.0) * 0.5)*100.0;
         }
         // higher half of the left joystick
         if (global_radio->radio_buffer[7] == 0xC1)
         {
-          global_radio->throttle = global_radio->radio_buffer[6] / 196.0 * 0.5 + 0.5;
+          global_radio->throttle = (global_radio->radio_buffer[6] / 196.0 * 0.5 + 0.5)*100.0;
         }
         // if already armed
         // the SE button 0x00 if pressed

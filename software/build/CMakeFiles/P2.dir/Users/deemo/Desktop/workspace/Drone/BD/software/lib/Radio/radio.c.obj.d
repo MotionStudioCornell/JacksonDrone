@@ -73,4 +73,4 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/Drone/BD/software/lib/Radio/radi
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
  /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
- /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
+ /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h
