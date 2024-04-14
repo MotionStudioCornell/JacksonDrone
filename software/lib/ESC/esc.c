@@ -61,7 +61,7 @@ void arm_motor(ESC *myesc)
 
   pwm_set_gpio_level(myesc->PIN_PWM[0], myesc->level_range[0]);
 
-  sleep_ms(5000);
+  sleep_ms(3000);
 }
 
 void motor_control(ESC *myesc, float percent_throttle, uint MOTOR_NUM)

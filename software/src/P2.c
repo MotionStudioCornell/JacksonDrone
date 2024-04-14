@@ -47,6 +47,10 @@
 #define RADIO_TX 8
 #define RADIO_RX 9
 
+#define Default_Kp 1.2
+#define Default_Ki 0.2
+#define Default_Kd 5.0
+
 static mpu9250 imu;
 static ESC esc;
 // Low pass
@@ -56,20 +60,11 @@ static leaky_lp a_filter;
 static controller fc;
 // radio
 static radio rdo;
-// #define RADIO_UART_ID uart1
-// #define BAUD_RATE 420000
-// #define DATA_BITS 8
-// #define STOP_BITS 1
-// #define PARITY UART_PARITY_NONE
 
-// #define CRSF_ADDRESS_CRSF_TRANSMITTER 0xEE
-// #define CRSF_ADDRESS_RADIO_TRANSMITTER 0xEA
-// #define CRSF_ADDRESS_FLIGHT_CONTROLLER 0xC8
-// #define CRSF_ADDRESS_CRSF_RECEIVER 0xEC
 
 // control cycle timing
-#define delta_T_ms 20
-#define delta_T_s delta_T_ms / 1000.0
+#define dT_ms 20
+#define dT_s dT_ms / 1000.0
 
 volatile int buffer_index = 0;
 volatile bool new_input = true;
@@ -119,12 +114,18 @@ void PD_handler()
         // Check if the input is for kp
         if (strncmp(buffer, "kp=", 3) == 0)
         {
-          fc.Kp = atoi(buffer + 3); // Convert the string to a number and assign to kp
+          fc.Kp = atof(buffer + 3); // Convert the string to a number and assign to kp
+        }
+
+        // Check if the input is for ki
+        if (strncmp(buffer, "ki=", 3) == 0)
+        {
+          fc.Ki = atof(buffer + 3); // Convert the string to a number and assign to kp
         }
         // Check if the input is for kd
         else if (strncmp(buffer, "kd=", 3) == 0)
         {
-          fc.Kd = atoi(buffer + 3); // Convert the string to a number and assign to kd
+          fc.Kd = atof(buffer + 3); // Convert the string to a number and assign to kd
         }
 
         buffer_index = 0; // Reset the buffer index
@@ -184,7 +185,7 @@ int main()
   leaky_init(&w_filter, 0.5f);
   leaky_init(&a_filter, 0.5f);
 
-  init_controller(&fc, 0.98f, delta_T_s, 1.0, 0, 2.0);
+  init_controller(&fc, 0.95f, dT_s, Default_Kp, Default_Ki, Default_Kd);
 
   // blink to show we are ready
   cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
@@ -217,27 +218,31 @@ int main()
     if (new_input)
     {
       new_input = false;
-      printf("Kp = %.1f, Kd = %.1f, throttle = %.1f , %s\n", fc.Kp, fc.Kd, rdo.throttle, rdo.controller_armed ? "ARMed" : "NOT-ARMed");
+      printf("Kp = %.1f, Ki = %.1f, Kd = %.1f, throttle = %.1f , %s\n", fc.Kp, fc.Ki, fc.Kd, rdo.throttle, rdo.controller_armed ? "ARMed" : "NOT-ARMed");
     }
 
-    // if armed
-    motor_control(&esc, rdo.throttle + fc.u.t1, 1);
-    motor_control(&esc, rdo.throttle + fc.u.t2, 2);
-    motor_control(&esc, rdo.throttle + fc.u.t3, 3);
-    motor_control(&esc, rdo.throttle + fc.u.t4, 4);
+   if(rdo.controller_armed){
+     motor_control(&esc, rdo.throttle + fc.u.t1, 1);
+     motor_control(&esc, rdo.throttle + fc.u.t2, 2);
+     motor_control(&esc, rdo.throttle + fc.u.t3, 3);
+     motor_control(&esc, rdo.throttle + fc.u.t4, 4);
+   }else{
+     motor_control(&esc, 0, 1);
+     motor_control(&esc, 0, 2);
+     motor_control(&esc, 0, 3);
+     motor_control(&esc, 0, 4);
+   }
 
-    // motor_control(&esc, 20, 1);
-    // motor_control(&esc, 20, 2);
-    // motor_control(&esc, 20, 3);
-    // motor_control(&esc, 20, 4);
+
+
 
     absolute_time_t endTime = get_absolute_time();
 
     int64_t time_diff_ms = absolute_time_diff_us(startTime, endTime) / 1000;
     // to achieve a fixed control loop time, if possible
-    u_int32_t sleep_time_ms = delta_T_ms - time_diff_ms >= 0 ? delta_T_ms - time_diff_ms : 0;
+    u_int32_t sleep_time_ms = dT_ms - time_diff_ms > 0 ? dT_ms - time_diff_ms : 0;
     sleep_ms(sleep_time_ms);
-    // printf("cycle time: %lld ms, ", time_diff_ms <= delta_T_ms ? delta_T_ms : time_diff_ms);
+    // printf("cycle time: %lld ms, ", time_diff_ms <= dT_ms ? dT_ms : time_diff_ms);
     // print_control(fc.u);
   }
 }

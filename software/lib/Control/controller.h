@@ -8,6 +8,11 @@
 #define VECTOR_SIZE 3 // Size of the vectors for angular velocity and acceleration (xyz)
 #define PI 3.14159265358979323846
 
+#define Integral_error_sat 20
+
+//satruate
+#define saturate(val, lower, upper) fmax(lower, fmin(val, upper))
+
 typedef struct
 {
   // define p = [roll, pitch, yaw]^T
@@ -17,19 +22,19 @@ typedef struct
   float pitch;
   float yaw;
 
-  float d_roll;
-  float d_pitch;
-  float d_yaw;
+  // float d_roll;
+  // float d_pitch;
+  // float d_yaw;
 
 } state;
 
 // throttle for each motor [0,100]
 // Assume 
 //          roll
-//        t4   ^   t2
+//        t1   ^   t3
 //             |
 //  pitch <--- |
-//        t3       t1
+//        t2       t4
 
 typedef struct
 {
@@ -43,11 +48,12 @@ typedef struct
 
 typedef struct
 {
-  // only PD, no I term yet
+
   state x;      // current state
   state target; // target state
 
-  state prev_diff; // previous (target - x), use to calcuate d/dt diff 
+  state prev_error; // previous (target - x)
+  state integral_error;
 
   control u;
 

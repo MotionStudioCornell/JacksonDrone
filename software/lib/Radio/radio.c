@@ -1,5 +1,6 @@
 #include "radio.h"
 
+
 // Global instance of `radio` if needed by the ISR
 static radio *global_radio = NULL;
 
@@ -51,11 +52,11 @@ void radio_irq_handler()
       }
       else
       {
-        for (int i = 0; i < 16; i++)
-        {
-          printf("[%02X, %d], ", global_radio->radio_buffer[i], global_radio->radio_buffer[i]); // Print each byte as a 2-digit hexadecimal number
-        }
-        printf("\n"); // Print a newline at the end
+        // for (int i = 0; i < 16; i++)
+        // {
+        //   printf("[%02X, %d], ", global_radio->radio_buffer[i], global_radio->radio_buffer[i]); // Print each byte as a 2-digit hexadecimal number
+        // }
+        // printf("\n"); // Print a newline at the end
         //45-255 C0, 0-196 C1 14_arm
 
         // lower half of the left joystick
@@ -71,11 +72,11 @@ void radio_irq_handler()
         // if already armed
         // the SE button 0x00 if pressed
 
-        if (global_radio->radio_buffer[14] == 0xBF)
+        if (global_radio->radio_buffer[14] == 0xAC)
         {
           global_radio->controller_armed = false;
         }
-        else if (global_radio->throttle == 0.0 && global_radio->radio_buffer[14] == 0x00)
+        else if (global_radio->throttle == 0.0 && global_radio->radio_buffer[14] == 0x12)
         {
           global_radio->controller_armed = true;
         }

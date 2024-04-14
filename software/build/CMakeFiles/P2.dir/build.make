@@ -758,346 +758,24 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pic
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: CMakeFiles/P2.dir/flags.make
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
-
-CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: CMakeFiles/P2.dir/flags.make
+CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
+CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
+
+CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+
+CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj: CMakeFiles/P2.dir/flags.make
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c
 
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i: cmake_force
@@ -1111,7 +789,7 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/har
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj: CMakeFiles/P2.dir/flags.make
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c
 
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i: cmake_force
@@ -1125,7 +803,7 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pic
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj: CMakeFiles/P2.dir/flags.make
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c
 
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i: cmake_force
@@ -1139,7 +817,7 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pic
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj: CMakeFiles/P2.dir/flags.make
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c
 
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i: cmake_force
@@ -1153,7 +831,7 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pic
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj: CMakeFiles/P2.dir/flags.make
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c
 
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i: cmake_force
@@ -1164,10 +842,38 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pic
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
 
+CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: CMakeFiles/P2.dir/flags.make
+CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
+CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
+
+CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+
+CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+
+CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: CMakeFiles/P2.dir/flags.make
+CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
+CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
+
+CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c > CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+
+CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj: CMakeFiles/P2.dir/flags.make
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c
 
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i: cmake_force
@@ -1181,7 +887,7 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pic
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj: CMakeFiles/P2.dir/flags.make
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c
 
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i: cmake_force
@@ -1195,7 +901,7 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/s
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj: CMakeFiles/P2.dir/flags.make
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c
 
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i: cmake_force
@@ -1209,7 +915,7 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/s
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj: CMakeFiles/P2.dir/flags.make
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c
 
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i: cmake_force
@@ -1223,7 +929,7 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/s
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj: CMakeFiles/P2.dir/flags.make
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c
 
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i: cmake_force
@@ -1237,7 +943,7 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/s
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj: CMakeFiles/P2.dir/flags.make
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c
 
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i: cmake_force
@@ -1251,7 +957,7 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pic
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj: CMakeFiles/P2.dir/flags.make
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c
 
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i: cmake_force
@@ -1265,7 +971,7 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pic
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: CMakeFiles/P2.dir/flags.make
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c
 
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i: cmake_force
@@ -1279,7 +985,7 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/har
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: CMakeFiles/P2.dir/flags.make
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c
 
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i: cmake_force
@@ -1293,7 +999,7 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/har
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj: CMakeFiles/P2.dir/flags.make
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c
 
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i: cmake_force
@@ -1307,7 +1013,7 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/har
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj: CMakeFiles/P2.dir/flags.make
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c
 
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i: cmake_force
@@ -1321,7 +1027,7 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pic
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj: CMakeFiles/P2.dir/flags.make
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c
 
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i: cmake_force
@@ -1335,7 +1041,7 @@ CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pic
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj: CMakeFiles/P2.dir/flags.make
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj: /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj: CMakeFiles/P2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj -MF CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj.d -o CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj -c /Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c
 
 CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i: cmake_force
@@ -1398,35 +1104,14 @@ P2_OBJECTS = \
 "CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" \
 "CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj" \
 "CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj" \
-"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj" \
+"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" \
 "CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj" \
 "CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj" \
 "CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj" \
 "CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj" \
 "CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj" \
+"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj" \
+"CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj" \
 "CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj" \
 "CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj" \
 "CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj" \
@@ -1494,35 +1179,14 @@ P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_co
 P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
 P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj
 P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
 P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj
+P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
 P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
 P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj
@@ -1539,7 +1203,7 @@ P2.elf: CMakeFiles/P2.dir/Users/deemo/Desktop/workspace/pico/pico-sdk/src/rp2_co
 P2.elf: CMakeFiles/P2.dir/build.make
 P2.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 P2.elf: CMakeFiles/P2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Linking CXX executable P2.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/deemo/Desktop/workspace/Drone/BD/software/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Linking CXX executable P2.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/P2.dir/link.txt --verbose=$(VERBOSE)
 	/opt/homebrew/bin/arm-none-eabi-objcopy -Oihex /Users/deemo/Desktop/workspace/Drone/BD/software/build/P2.elf P2.hex
 	/opt/homebrew/bin/arm-none-eabi-objcopy -Obinary /Users/deemo/Desktop/workspace/Drone/BD/software/build/P2.elf P2.bin
