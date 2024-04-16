@@ -47,9 +47,13 @@
 #define RADIO_TX 8
 #define RADIO_RX 9
 
-#define Default_Kp 1.2
-#define Default_Ki 0.2
-#define Default_Kd 5.0
+//controller
+#define Default_Kp 0.8
+#define Default_Ki 10
+#define Default_Kd 0.03
+
+//init throttle when armed, so it doesnt start weird
+#define INIT_THROTTLE 15
 
 static mpu9250 imu;
 static ESC esc;
@@ -60,7 +64,6 @@ static leaky_lp a_filter;
 static controller fc;
 // radio
 static radio rdo;
-
 
 // control cycle timing
 #define dT_ms 20
@@ -182,10 +185,10 @@ int main()
   arm_motor(&esc);
   printf("Done.\n");
 
-  leaky_init(&w_filter, 0.5f);
-  leaky_init(&a_filter, 0.5f);
+  leaky_init(&w_filter, 0.9f);
+  leaky_init(&a_filter, 0.9f);
 
-  init_controller(&fc, 0.95f, dT_s, Default_Kp, Default_Ki, Default_Kd);
+  init_controller(&fc, 0.98f, dT_s, Default_Kp, Default_Ki, Default_Kd);
 
   // blink to show we are ready
   cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
@@ -218,23 +221,23 @@ int main()
     if (new_input)
     {
       new_input = false;
-      printf("Kp = %.1f, Ki = %.1f, Kd = %.1f, throttle = %.1f , %s\n", fc.Kp, fc.Ki, fc.Kd, rdo.throttle, rdo.controller_armed ? "ARMed" : "NOT-ARMed");
+      printf("Kp = %.3f, Ki = %.3f, Kd = %.3f, throttle = %.3f , %s\n", fc.Kp, fc.Ki, fc.Kd, rdo.throttle, rdo.controller_armed ? "ARMed" : "NOT-ARMed");
     }
 
-   if(rdo.controller_armed){
-     motor_control(&esc, rdo.throttle + fc.u.t1, 1);
-     motor_control(&esc, rdo.throttle + fc.u.t2, 2);
-     motor_control(&esc, rdo.throttle + fc.u.t3, 3);
-     motor_control(&esc, rdo.throttle + fc.u.t4, 4);
-   }else{
-     motor_control(&esc, 0, 1);
-     motor_control(&esc, 0, 2);
-     motor_control(&esc, 0, 3);
-     motor_control(&esc, 0, 4);
-   }
-
-
-
+    if (rdo.controller_armed)
+    {
+      motor_control(&esc, INIT_THROTTLE + rdo.throttle + fc.u.t1, 1);
+      motor_control(&esc, INIT_THROTTLE + rdo.throttle + fc.u.t2, 2);
+      motor_control(&esc, INIT_THROTTLE + rdo.throttle + fc.u.t3, 3);
+      motor_control(&esc, INIT_THROTTLE + rdo.throttle + fc.u.t4, 4);
+    }
+    else
+    {
+      motor_control(&esc, 0, 1);
+      motor_control(&esc, 0, 2);
+      motor_control(&esc, 0, 3);
+      motor_control(&esc, 0, 4);
+    }
 
     absolute_time_t endTime = get_absolute_time();
 

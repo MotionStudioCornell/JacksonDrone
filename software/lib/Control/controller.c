@@ -1,13 +1,26 @@
 // controller.c
 #include "controller.h"
 
-void set_state(controller *my_controller, float roll, float pitch, float yaw, float droll, float dpitch, float dyaw)
+//helper functions
+void set_state(controller *my_controller, float roll, float pitch, float yaw)
 {
 
   my_controller->x.roll = 0.0f;
   my_controller->x.pitch = 0.0f;
   my_controller->x.yaw = 0.0f;
 
+  // my_controller->x.d_roll = 0.0f;
+  // my_controller->x.d_pitch = 0.0f;
+  // my_controller->x.d_yaw = 0.0f;
+}
+
+state make_state(float roll, float pitch, float yaw)
+{
+  state result;
+  result.roll = roll;
+  result.pitch = pitch;
+  result.yaw = yaw;
+  return result;
   // my_controller->x.d_roll = 0.0f;
   // my_controller->x.d_pitch = 0.0f;
   // my_controller->x.d_yaw = 0.0f;
@@ -87,6 +100,7 @@ void print_control(control u)
   printf("t1: %.2f, t2: %.2f, t3: %.2f, t4: %.2f\n", u.t1, u.t2, u.t3, u.t4);
 }
 
+// main functions
 void init_controller(controller *my_controller, float alpha, float dT, float Kp, float Ki, float Kd)
 {
   my_controller->com_alpha = alpha;
@@ -97,7 +111,7 @@ void init_controller(controller *my_controller, float alpha, float dT, float Kp,
 
   set_throttle(my_controller, 0.0f, 0.0f, 0.0f, 0.0f);
   // setting body frame the reference frame
-  set_state(my_controller, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+  set_state(my_controller, 0.0f, 0.0f, 0.0f);
 }
 
 void saturate_control(control *u, float cap)
@@ -108,14 +122,19 @@ void saturate_control(control *u, float cap)
   u->t4 = saturate(u->t4, -cap, cap);
 }
 
-void update_u(controller *my_controller)
+void update_u(controller *my_controller, float w[VECTOR_SIZE])
 {
   state error = get_state_error(my_controller->x, my_controller->target);
-  // can just use gyro data here
-  state d_error = get_state_error(my_controller->prev_error, error);
+  // can just use gyro data here or state error
+  // state d_error = get_state_error(my_controller->prev_error, error);
+
+  // use gyro
+  state d_error = make_state(-w[0], -w[1], -w[2]);
+
   my_controller->integral_error = (my_controller->integral_error, get_state_multi(error, my_controller->dT));
   my_controller->integral_error = get_state_saturate(my_controller->integral_error, -Integral_error_sat, Integral_error_sat);
 
+  // if we use state error not gyro
   my_controller->prev_error = error;
 
   float motor1 = 0.0f;
@@ -134,7 +153,6 @@ void update_u(controller *my_controller)
   motor4 += roll_P + roll_I + roll_D;
 
   // Pitch
-
   float pitch_P = my_controller->Kp * (error.pitch);
   float pitch_I = my_controller->Ki * (my_controller->integral_error.pitch);
   float pitch_D = my_controller->Kd * (d_error.pitch);
@@ -151,7 +169,7 @@ void update_u(controller *my_controller)
   my_controller->u.t4 = motor4;
 
   // saturate the control to [-cap, cap]
-  saturate_control(&my_controller->u, 25);
+  saturate_control(&my_controller->u, 10);
 }
 
 void update_complementry_filter(controller *my_controller, float w[VECTOR_SIZE], float a[VECTOR_SIZE])
@@ -169,9 +187,9 @@ void update_complementry_filter(controller *my_controller, float w[VECTOR_SIZE],
   float yaw_new = (my_controller->x.yaw + gyro_yaw);
   //--------------------------------------------
   // degree/sec
-  float d_roll_new = (roll_new - my_controller->x.roll) / my_controller->dT;
-  float d_pitch_new = (pitch_new - my_controller->x.pitch) / my_controller->dT;
-  float d_yaw_new = (yaw_new - my_controller->x.yaw) / my_controller->dT;
+  // float d_roll_new = (roll_new - my_controller->x.roll) / my_controller->dT;
+  // float d_pitch_new = (pitch_new - my_controller->x.pitch) / my_controller->dT;
+  // float d_yaw_new = (yaw_new - my_controller->x.yaw) / my_controller->dT;
 
   // Update the state vector x and dx
   my_controller->x.roll = roll_new;
@@ -188,5 +206,5 @@ void update_complementry_filter(controller *my_controller, float w[VECTOR_SIZE],
 void update_controller(controller *my_controller, float w[VECTOR_SIZE], float a[VECTOR_SIZE])
 {
   update_complementry_filter(my_controller, w, a);
-  update_u(my_controller);
+  update_u(my_controller, w);
 }

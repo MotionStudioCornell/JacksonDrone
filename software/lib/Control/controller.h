@@ -8,7 +8,7 @@
 #define VECTOR_SIZE 3 // Size of the vectors for angular velocity and acceleration (xyz)
 #define PI 3.14159265358979323846
 
-#define Integral_error_sat 20
+#define Integral_error_sat 30
 
 //satruate
 #define saturate(val, lower, upper) fmax(lower, fmin(val, upper))
