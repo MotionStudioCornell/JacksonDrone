@@ -52,6 +52,12 @@
 #define Default_Ki 10
 #define Default_Kd 0.03
 
+
+#define Default_yaw_Kp 0.8
+#define Default_yaw_Ki 0
+#define Default_yaw_Kd 0.015
+
+
 //init throttle when armed, so it doesnt start weird
 #define INIT_THROTTLE 15
 
@@ -188,7 +194,7 @@ int main()
   leaky_init(&w_filter, 0.9f);
   leaky_init(&a_filter, 0.9f);
 
-  init_controller(&fc, 0.98f, dT_s, Default_Kp, Default_Ki, Default_Kd);
+  init_controller(&fc, 0.98f, dT_s, Default_Kp, Default_Ki, Default_Kd, Default_yaw_Kp, Default_yaw_Ki, Default_yaw_Kd);
 
   // blink to show we are ready
   cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
@@ -226,10 +232,15 @@ int main()
 
     if (rdo.controller_armed)
     {
-      motor_control(&esc, INIT_THROTTLE + rdo.throttle + fc.u.t1, 1);
-      motor_control(&esc, INIT_THROTTLE + rdo.throttle + fc.u.t2, 2);
-      motor_control(&esc, INIT_THROTTLE + rdo.throttle + fc.u.t3, 3);
-      motor_control(&esc, INIT_THROTTLE + rdo.throttle + fc.u.t4, 4);
+      // motor_control(&esc, INIT_THROTTLE + rdo.throttle + fc.u.t1, 1);
+      // motor_control(&esc, INIT_THROTTLE + rdo.throttle + fc.u.t2, 2);
+      // motor_control(&esc, INIT_THROTTLE + rdo.throttle + fc.u.t3, 3);
+      // motor_control(&esc, INIT_THROTTLE + rdo.throttle + fc.u.t4, 4);
+
+      motor_control(&esc, rdo.throttle , 1);
+      motor_control(&esc, rdo.throttle , 2);
+      motor_control(&esc, rdo.throttle , 3);
+      motor_control(&esc, rdo.throttle , 4);
     }
     else
     {

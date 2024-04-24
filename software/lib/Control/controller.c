@@ -101,13 +101,16 @@ void print_control(control u)
 }
 
 // main functions
-void init_controller(controller *my_controller, float alpha, float dT, float Kp, float Ki, float Kd)
+void init_controller(controller *my_controller, float alpha, float dT, float Kp, float Ki, float Kd, float Kp_yaw, float Ki_yaw, float Kd_yaw)
 {
   my_controller->com_alpha = alpha;
   my_controller->dT = dT;
   my_controller->Kp = Kp;
   my_controller->Ki = Ki;
   my_controller->Kd = Kd;
+  my_controller->Kp_yaw = Kp_yaw;
+  my_controller->Ki_yaw = Ki_yaw;
+  my_controller->Kd_yaw = Kd_yaw;
 
   set_throttle(my_controller, 0.0f, 0.0f, 0.0f, 0.0f);
   // setting body frame the reference frame
@@ -129,7 +132,7 @@ void update_u(controller *my_controller, float w[VECTOR_SIZE])
   // state d_error = get_state_error(my_controller->prev_error, error);
 
   // use gyro
-  state d_error = make_state(-w[0], -w[1], -w[2]);
+  state d_error = make_state(w[0], w[1], -w[2]);
 
   my_controller->integral_error = (my_controller->integral_error, get_state_multi(error, my_controller->dT));
   my_controller->integral_error = get_state_saturate(my_controller->integral_error, -Integral_error_sat, Integral_error_sat);
@@ -162,6 +165,17 @@ void update_u(controller *my_controller, float w[VECTOR_SIZE])
 
   motor1 += pitch_P + pitch_I + pitch_D;
   motor3 += pitch_P + pitch_I + pitch_D;
+
+  // yaw
+  float yaw_P = my_controller->Kp_yaw * (error.yaw);
+  float yaw_I = my_controller->Ki_yaw * (my_controller->integral_error.yaw);
+  float yaw_D = my_controller->Kd_yaw * (d_error.yaw);
+
+  motor2 += -yaw_P - yaw_I - yaw_D;
+  motor3 += -yaw_P - yaw_I - yaw_D;
+
+  motor1 += yaw_P + yaw_I + yaw_D;
+  motor4 += yaw_P + yaw_I + yaw_D;
 
   my_controller->u.t1 = motor1;
   my_controller->u.t2 = motor2;

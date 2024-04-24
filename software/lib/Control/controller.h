@@ -62,13 +62,19 @@ typedef struct
   // sampling time in sec
   float dT;
 
+  //PID for roll and pitch
   float Kp;
   float Ki;
   float Kd;
 
+  //PID for yaw
+  float Kp_yaw;
+  float Ki_yaw;
+  float Kd_yaw;
+
 } controller;
 
-void init_controller(controller *my_controller, float alpha, float dT, float Kp, float Ki, float Kd);
+void init_controller(controller *my_controller, float alpha, float dT, float Kp, float Ki, float Kd, float Kp_yaw, float Ki_yaw, float Kd_yaw);
 
 void update_controller(controller *my_controller, float w[VECTOR_SIZE], float a[VECTOR_SIZE]);
 
