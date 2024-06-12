@@ -132,7 +132,7 @@ void update_u(controller *my_controller, float w[VECTOR_SIZE])
   // state d_error = get_state_error(my_controller->prev_error, error);
 
   // use gyro
-  state d_error = make_state(w[0], w[1], -w[2]);
+  state d_error = make_state(-w[0], -w[1], -w[2]);
 
   my_controller->integral_error = (my_controller->integral_error, get_state_multi(error, my_controller->dT));
   my_controller->integral_error = get_state_saturate(my_controller->integral_error, -Integral_error_sat, Integral_error_sat);
@@ -186,7 +186,7 @@ void update_u(controller *my_controller, float w[VECTOR_SIZE])
   saturate_control(&my_controller->u, 10);
 }
 
-void update_complementry_filter(controller *my_controller, float w[VECTOR_SIZE], float a[VECTOR_SIZE])
+void update_filter(controller *my_controller, float w[VECTOR_SIZE], float a[VECTOR_SIZE])
 {
   // Complementary Filter
   float accel_roll = atan2f(a[1], a[2]) * 180.0 / PI;
@@ -219,6 +219,6 @@ void update_complementry_filter(controller *my_controller, float w[VECTOR_SIZE],
 
 void update_controller(controller *my_controller, float w[VECTOR_SIZE], float a[VECTOR_SIZE])
 {
-  update_complementry_filter(my_controller, w, a);
+  update_filter(my_controller, w, a);
   update_u(my_controller, w);
 }

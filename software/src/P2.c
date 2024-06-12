@@ -32,10 +32,10 @@
 #define MAX_DUTY 0.1
 #define MIN_DUTY 0.05
 
-#define PIN_PWM0 18
-#define PIN_PWM1 19
+#define PIN_PWM1 21
 #define PIN_PWM2 20
-#define PIN_PWM3 21
+#define PIN_PWM3 19
+#define PIN_PWM4 18
 
 // uart0
 #define UART_ID uart0
@@ -47,18 +47,23 @@
 #define RADIO_TX 8
 #define RADIO_RX 9
 
-//controller
-#define Default_Kp 0.8
-#define Default_Ki 10
-#define Default_Kd 0.03
+// controller
+ #define Default_Kp 0.2
+ #define Default_Ki 10
+ #define Default_Kd 0.015
+ 
+// #define Default_Kp 0
+// #define Default_Ki 0
+// #define Default_Kd 0
 
-
-#define Default_yaw_Kp 0.8
+#define Default_yaw_Kp 0
 #define Default_yaw_Ki 0
-#define Default_yaw_Kd 0.015
+#define Default_yaw_Kd 0
+// #define Default_yaw_Kp 0
+// #define Default_yaw_Ki 0
+// #define Default_yaw_Kd 0
 
-
-//init throttle when armed, so it doesnt start weird
+// init throttle when armed, so it doesnt start weird
 #define INIT_THROTTLE 15
 
 static mpu9250 imu;
@@ -180,7 +185,7 @@ int main()
   printf("Done. Offsets: w_x: %.5f, w_y:%.5f, w_z:%.5f \n", imu.w_offsets[0], imu.w_offsets[1], imu.w_offsets[2]);
 
   // ESC stuff
-  uint32_t PWM_PIN[4] = {PIN_PWM0, PIN_PWM1, PIN_PWM2, PIN_PWM3};
+  uint32_t PWM_PIN[4] = {PIN_PWM1, PIN_PWM2, PIN_PWM3, PIN_PWM4};
   esc_setup(&esc, PWM_PIN, PWM_FREQ, PWM_WRAP, MIN_DUTY, MAX_DUTY);
 
   // printf("Calibrating ESC...\n");
@@ -223,24 +228,27 @@ int main()
 
     update_controller(&fc, wf, af);
 
+    
+
     // displays the current throttle
     if (new_input)
     {
       new_input = false;
+      printf("roll:%.3f, pitch:%.3f, yaw:%.3f \n", fc.x.roll, fc.x.pitch, fc.x.yaw);
       printf("Kp = %.3f, Ki = %.3f, Kd = %.3f, throttle = %.3f , %s\n", fc.Kp, fc.Ki, fc.Kd, rdo.throttle, rdo.controller_armed ? "ARMed" : "NOT-ARMed");
     }
 
     if (rdo.controller_armed)
     {
-      // motor_control(&esc, INIT_THROTTLE + rdo.throttle + fc.u.t1, 1);
-      // motor_control(&esc, INIT_THROTTLE + rdo.throttle + fc.u.t2, 2);
-      // motor_control(&esc, INIT_THROTTLE + rdo.throttle + fc.u.t3, 3);
-      // motor_control(&esc, INIT_THROTTLE + rdo.throttle + fc.u.t4, 4);
+      motor_control(&esc, INIT_THROTTLE + rdo.throttle + fc.u.t1, 1);
+      motor_control(&esc, INIT_THROTTLE + rdo.throttle + fc.u.t2, 2);
+      motor_control(&esc, INIT_THROTTLE + rdo.throttle + fc.u.t3, 3);
+      motor_control(&esc, INIT_THROTTLE + rdo.throttle + fc.u.t4, 4);
 
-      motor_control(&esc, rdo.throttle , 1);
-      motor_control(&esc, rdo.throttle , 2);
-      motor_control(&esc, rdo.throttle , 3);
-      motor_control(&esc, rdo.throttle , 4);
+      // motor_control(&esc, rdo.throttle, 1);
+      // motor_control(&esc, rdo.throttle, 2);
+      // motor_control(&esc, rdo.throttle, 3);
+      // motor_control(&esc, rdo.throttle, 4);
     }
     else
     {
