@@ -1,6 +1,27 @@
 # JacksonDrone
 
+For the build guide, documentation, and more, please check out our [Wiki page](https://github.com/MotionStudioCornell/JacksonDrone/wiki).
 
-Please check out our [Wiki page](https://github.com/MotionStudioCornell/JacksonDrone/wiki)
+<p align="center">
+<img width="500" alt="P3" src="https://github.com/MotionStudioCornell/JacksonDrone/assets/39002684/33bae1ff-5304-4a2a-a809-c6ddbcf468fc">
+</p>
 
-![IMG_1238](https://github.com/MotionStudioCornell/P3Drone/assets/39002684/f9509f11-d152-4950-b659-caaf163655d5)
+# Getting Started
+
+Clone the project
+```
+git clone https://github.com/MotionStudioCornell/JacksonDrone.git
+```
+
+Go to the software dir.
+```
+cd JacksonDrone && cd software
+```
+
+Build the project
+
+```
+./builder
+```
+
+
