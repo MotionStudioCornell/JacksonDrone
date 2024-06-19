@@ -21,5 +21,5 @@ void cali_motor(ESC *myesc);
 // arm the ESC so it can starts
 void arm_motor(ESC *myesc);
 
-// percent_throttle: [0,1], 0 for no throttle, 1 for max throttle
+// percent_throttle: [0,100], 0 for no throttle, 100 for max throttle
 void motor_control(ESC *myesc, float percent_throttle, uint MOTOR_NUM);

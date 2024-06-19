@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /Users/deemo/Desktop/workspace/pico/pico-sdk/tools/pioasm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/deemo/Desktop/workspace/Drone/BD/software/build/pioasm
+CMAKE_BINARY_DIR = /Users/deemo/Desktop/workspace/Drone/P3/software/build/pioasm
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deemo/Desktop/workspace/Drone/BD/software/build/pioasm/CMakeFiles /Users/deemo/Desktop/workspace/Drone/BD/software/build/pioasm//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deemo/Desktop/workspace/Drone/P3/software/build/pioasm/CMakeFiles /Users/deemo/Desktop/workspace/Drone/P3/software/build/pioasm//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deemo/Desktop/workspace/Drone/BD/software/build/pioasm/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/deemo/Desktop/workspace/Drone/P3/software/build/pioasm/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

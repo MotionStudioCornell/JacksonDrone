@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/deemo/Desktop/workspace/Drone/BD/software/build/pico-sdk/tools/cmake_install.cmake")
-  include("/Users/deemo/Desktop/workspace/Drone/BD/software/build/pico-sdk/src/cmake_install.cmake")
-  include("/Users/deemo/Desktop/workspace/Drone/BD/software/build/pico-sdk/docs/cmake_install.cmake")
+  include("/Users/deemo/Desktop/workspace/Drone/P3/software/build/pico-sdk/tools/cmake_install.cmake")
+  include("/Users/deemo/Desktop/workspace/Drone/P3/software/build/pico-sdk/src/cmake_install.cmake")
+  include("/Users/deemo/Desktop/workspace/Drone/P3/software/build/pico-sdk/docs/cmake_install.cmake")
 
 endif()
 

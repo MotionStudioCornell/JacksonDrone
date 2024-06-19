@@ -13,8 +13,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.26.4/CMakeSystem.cmake"
   "elf2uf2/tmp/ELF2UF2Build-mkdirs.cmake"
   "pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/tmp/PioasmBuild-mkdirs.cmake"
-  "/Users/deemo/Desktop/workspace/Drone/BD/software/src/CMakeLists.txt"
-  "/Users/deemo/Desktop/workspace/Drone/BD/software/src/pico_sdk_import.cmake"
+  "/Users/deemo/Desktop/workspace/Drone/P3/software/src/CMakeLists.txt"
+  "/Users/deemo/Desktop/workspace/Drone/P3/software/src/pico_sdk_import.cmake"
   "/Users/deemo/Desktop/workspace/pico/pico-sdk/CMakeLists.txt"
   "/Users/deemo/Desktop/workspace/pico/pico-sdk/cmake/Platform/PICO.cmake"
   "/Users/deemo/Desktop/workspace/pico/pico-sdk/cmake/pico_pre_load_platform.cmake"
@@ -329,7 +329,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/P2.dir/DependInfo.cmake"
+  "CMakeFiles/P3.dir/DependInfo.cmake"
   "CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake"

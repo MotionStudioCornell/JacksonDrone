@@ -3,28 +3,28 @@ cmake_minimum_required(VERSION 3.12)
 # Pull in SDK (must be before project)
 include(pico_sdk_import.cmake)
 
-project(P2 C CXX ASM)
+project(P3 C CXX ASM)
 
 set(PICO_BOARD pico_w)
 
 # Initialize the SDK
 pico_sdk_init()
 
-add_executable(P2)
+add_executable(P3)
 
-pico_enable_stdio_usb(P2 0)
-pico_enable_stdio_uart(P2 1)
+pico_enable_stdio_usb(P3 0)
+pico_enable_stdio_uart(P3 1)
 
 # add_compile_options(-Ofast)
 
 # must match with executable name and source file names
-target_sources(P2 PRIVATE P2.c ../lib/MPU9250/mpu9250.c ../lib/ESC/esc.c ../lib/Filter/leaky_LP.c ../lib/Radio/radio.c ../lib/Control/controller.c)
+target_sources(P3 PRIVATE P3.c ../lib/MPU9250/mpu9250.c ../lib/ESC/esc.c ../lib/Filter/leaky_LP.c ../lib/Radio/radio.c ../lib/Control/controller.c)
 
 # Add pico_multicore which is required for multicore functionality
-target_link_libraries(P2 pico_stdlib hardware_spi hardware_pwm hardware_irq hardware_clocks pico_cyw43_arch_none hardware_uart)
+target_link_libraries(P3 pico_stdlib hardware_spi hardware_pwm hardware_irq hardware_clocks pico_cyw43_arch_none hardware_uart)
 
 # create map/bin/hex file etc.
-pico_add_extra_outputs(P2)
+pico_add_extra_outputs(P3)
 
 add_compile_options(-Wall
   -Wno-format # int != int32_t as far as the compiler is concerned because gcc has int32_t as long int

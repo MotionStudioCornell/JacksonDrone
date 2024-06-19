@@ -1,3 +1,0 @@
-/Users/deemo/Desktop/workspace/Drone/BD/software/build/pioasm/CMakeFiles/pioasm.dir
-/Users/deemo/Desktop/workspace/Drone/BD/software/build/pioasm/CMakeFiles/edit_cache.dir
-/Users/deemo/Desktop/workspace/Drone/BD/software/build/pioasm/CMakeFiles/rebuild_cache.dir

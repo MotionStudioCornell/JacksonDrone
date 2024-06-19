@@ -1,4 +1,4 @@
-# Install script for directory: /Users/deemo/Desktop/workspace/Drone/BD/software/src
+# Install script for directory: /Users/deemo/Desktop/workspace/Drone/P3/software/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/deemo/Desktop/workspace/Drone/BD/software/build/pico-sdk/cmake_install.cmake")
+  include("/Users/deemo/Desktop/workspace/Drone/P3/software/build/pico-sdk/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/deemo/Desktop/workspace/Drone/BD/software/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/deemo/Desktop/workspace/Drone/P3/software/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
