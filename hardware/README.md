@@ -1,5 +1,5 @@
-# P2-Schematics
-KiCad Schematics for P2
+# Schematics
+KiCad Schematics
 
 *Note: please export the schematics to `P2.svg` so this README can preview it correctly*
 
